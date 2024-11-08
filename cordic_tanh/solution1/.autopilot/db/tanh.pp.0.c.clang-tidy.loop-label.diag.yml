@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'C:/Users/chait/OneDrive/Desktop/FPGA/Project/tanh/cordic_tanh/solution1/.autopilot/db/tanh.pp.0.c'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_14_1:  '
+    FileOffset:      14
+    FilePath:        tanh.c
+    Replacements:    
+      - FilePath:        'C:\Users\chait\OneDrive\Desktop\FPGA\Project\tanh\cordic_tanh\solution1\.autopilot\db\tanh.pp.0.c'
+        Offset:          45759
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_14_1: '
+...

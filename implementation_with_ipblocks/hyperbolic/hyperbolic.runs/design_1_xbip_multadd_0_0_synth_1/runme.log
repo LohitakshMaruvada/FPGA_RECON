@@ -1,0 +1,376 @@
+
+*** Running vivado
+    with args -log design_1_xbip_multadd_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbip_multadd_0_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_xbip_multadd_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1296.473 ; gain = 0.023 ; free physical = 3756 ; free virtual = 24691
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lohitaksh/FPGA_project/Divider/Divider_hls/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/lohitaksh/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbip_multadd_0_0
+Command: synth_design -top design_1_xbip_multadd_0_0 -part xc7a35tcpg236-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9850
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/lohitaksh/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1957.438 ; gain = 369.801 ; free physical = 183 ; free virtual = 17016
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1102.916; parent = 977.442; children = 125.474
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2955.867; parent = 1957.441; children = 998.426
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_xbip_multadd_0_0' [/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_xbip_multadd_0_0/synth/design_1_xbip_multadd_0_0.vhd:73]
+	Parameter C_VERBOSITY bound to: 0 - type: integer 
+	Parameter C_XDEVICEFAMILY bound to: artix7 - type: string 
+	Parameter C_A_WIDTH bound to: 9 - type: integer 
+	Parameter C_B_WIDTH bound to: 9 - type: integer 
+	Parameter C_C_WIDTH bound to: 16 - type: integer 
+	Parameter C_A_TYPE bound to: 0 - type: integer 
+	Parameter C_B_TYPE bound to: 0 - type: integer 
+	Parameter C_C_TYPE bound to: 0 - type: integer 
+	Parameter C_CE_OVERRIDES_SCLR bound to: 0 - type: integer 
+	Parameter C_AB_LATENCY bound to: -1 - type: integer 
+	Parameter C_C_LATENCY bound to: -1 - type: integer 
+	Parameter C_OUT_HIGH bound to: 15 - type: integer 
+	Parameter C_OUT_LOW bound to: 0 - type: integer 
+	Parameter C_USE_PCIN bound to: 0 - type: integer 
+	Parameter C_TEST_CORE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xbip_multadd_v3_0_17' declared at '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ipshared/4b17/hdl/xbip_multadd_v3_0_vh_rfs.vhd:2168' bound to instance 'U0' of component 'xbip_multadd_v3_0_17' [/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_xbip_multadd_0_0/synth/design_1_xbip_multadd_0_0.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'design_1_xbip_multadd_0_0' (0#1) [/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_xbip_multadd_0_0/synth/design_1_xbip_multadd_0_0.vhd:73]
+WARNING: [Synth 8-7129] Port CEA1 in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEA2 in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEB1 in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEB2 in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEAD in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CED in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEC in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CECARRYIN in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CECTRL in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEALUMODE in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEINMODE in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEM in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CEP in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRA in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRB in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRC in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRD in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRALLCARRYIN in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRCTRL in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRALUMODE in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRINMODE in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRM in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLRP in module xbip_dsp48e1_wrapper_v3_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYOUT in module xbip_dsp48_multadd_synth is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[47] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[46] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[45] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[44] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[43] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[42] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[41] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[40] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[39] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[38] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[37] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[36] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[35] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[34] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[33] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[32] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[31] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[30] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[29] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[28] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[27] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[26] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[25] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[24] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[23] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[22] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[21] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[20] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[19] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[18] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[17] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[16] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[15] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[14] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[13] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[12] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[11] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[10] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[9] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[8] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[7] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[6] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[5] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[4] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[3] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[2] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[1] in module multadd_dsp is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[0] in module multadd_dsp is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2086.406 ; gain = 498.770 ; free physical = 423 ; free virtual = 16043
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 125.474
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3084.836; parent = 2086.410; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2104.219 ; gain = 516.582 ; free physical = 416 ; free virtual = 16038
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 125.474
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3102.648; parent = 2104.223; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2104.219 ; gain = 516.582 ; free physical = 410 ; free virtual = 16031
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 125.474
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3102.648; parent = 2104.223; children = 998.426
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2110.156 ; gain = 0.000 ; free physical = 381 ; free virtual = 16007
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_xbip_multadd_0_0/design_1_xbip_multadd_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_xbip_multadd_0_0/design_1_xbip_multadd_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_xbip_multadd_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_xbip_multadd_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2177.156 ; gain = 0.000 ; free physical = 524 ; free virtual = 16164
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2177.156 ; gain = 0.000 ; free physical = 517 ; free virtual = 16159
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/lohitaksh/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 1278 ; free virtual = 17000
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 128.592
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 1271 ; free virtual = 16993
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 128.592
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_xbip_multadd_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 1357 ; free virtual = 17085
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 128.592
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 1356 ; free virtual = 17095
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 128.592
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port PCIN[47] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[46] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[45] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[44] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[43] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[42] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[41] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[40] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[39] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[38] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[37] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[36] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[35] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[34] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[33] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[32] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[31] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[30] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[29] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[28] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[27] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[26] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[25] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[24] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[23] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[22] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[21] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PCIN[20] in module xbip_multadd_v3_0_17_viv is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 1025 ; free virtual = 16786
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 128.592
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3881 ; free virtual = 19887
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 132.751
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3883 ; free virtual = 19890
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 132.751
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3866 ; free virtual = 19873
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 132.751
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3639 ; free virtual = 19660
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 132.751
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3635 ; free virtual = 19656
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 132.751
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3653 ; free virtual = 19675
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 132.751
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3675 ; free virtual = 19698
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 132.751
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3700 ; free virtual = 19723
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 132.751
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3722 ; free virtual = 19746
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 132.751
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name               | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|xbip_dsp48e1_wrapper_v3_0 | Dynamic     | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 1    | 1    | 
++--------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     1|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3744 ; free virtual = 19768
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1120.394; parent = 995.187; children = 132.751
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3143.570; parent = 2145.145; children = 998.426
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 49 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2177.156 ; gain = 516.582 ; free physical = 3831 ; free virtual = 19858
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2177.156 ; gain = 589.520 ; free physical = 3820 ; free virtual = 19849
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2177.156 ; gain = 0.000 ; free physical = 3845 ; free virtual = 19872
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2177.156 ; gain = 0.000 ; free physical = 5005 ; free virtual = 21115
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 9f416cd4
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2177.156 ; gain = 880.684 ; free physical = 5062 ; free virtual = 21175
+INFO: [Common 17-1381] The checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_xbip_multadd_0_0_synth_1/design_1_xbip_multadd_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbip_multadd_0_0, cache-ID = 0c3e10860662d2b1
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_xbip_multadd_0_0_synth_1/design_1_xbip_multadd_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_xbip_multadd_0_0_utilization_synth.rpt -pb design_1_xbip_multadd_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 14:12:33 2024...

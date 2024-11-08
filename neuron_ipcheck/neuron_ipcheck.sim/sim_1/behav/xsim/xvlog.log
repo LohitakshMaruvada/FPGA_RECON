@@ -1,0 +1,56 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/floating_point_v7_1_rfs.v" into library floating_point_v7_1_15
+INFO: [VRFC 10-311] analyzing module dummy_verilog_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_fadd_32ns_32ns_32_7_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fadd_32ns_32ns_32_7_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_faddfsub_32ns_32ns_32_7_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_faddfsub_32ns_32ns_32_7_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_fcmp_32ns_32ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_fdiv_32ns_32ns_32_16_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fdiv_32ns_32ns_32_16_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_fmul_32ns_32ns_32_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fmul_32ns_32ns_32_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_neuron_Pipeline_VITIS_LOOP_15_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_neuron_Pipeline_VITIS_LOOP_15_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_neuron_Pipeline_VITIS_LOOP_15_1_neuron_tanh_in_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_neuron_Pipeline_VITIS_LOOP_15_1_neuron_tanh_in_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/neuron_faddfsub_32ns_32ns_32_7_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_faddfsub_32ns_32ns_32_7_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/neuron_fadd_32ns_32ns_32_7_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fadd_32ns_32ns_32_7_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/neuron_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fcmp_32ns_32ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/neuron_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fdiv_32ns_32ns_32_16_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/neuron_fmul_32ns_32ns_32_4_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fmul_32ns_32ns_32_4_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.gen/sources_1/ip/neuron_0/sim/neuron_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_faddfsub_32ns_32ns_32_7_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/MAC_fcmp_32ns_32ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/MAC_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/MAC_fmul_32ns_32ns_32_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_fmul_32ns_32ns_32_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/MAC_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_fcmp_32ns_32ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/MAC_fmul_32ns_32ns_32_4_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_fmul_32ns_32ns_32_4_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.gen/sources_1/ip/MAC_0/sim/MAC_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

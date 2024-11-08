@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov  8 17:35:08 2024
+# Process ID: 2676
+# Current directory: C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25620 C:\Users\chait\OneDrive\Desktop\submission\neuron_ipcheck\neuron_ipcheck.xpr
+# Log file: C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/vivado.log
+# Journal file: C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck\vivado.jou
+# Running On: LAPTOP-HO0MVFJA, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 8241 MB
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.xprupdate_compile_order -fileset sources_1
+launch_simulation
+source testbench.tcl

@@ -1,0 +1,22 @@
+---
+MainSourceFile:  'C:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution1/.autopilot/db/MAC.pp.0.c'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_26_1:  '
+    FileOffset:      26
+    FilePath:        MAC.c
+    Replacements:    
+      - FilePath:        'C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC\MAC\solution1\.autopilot\db\MAC.pp.0.c'
+        Offset:          45940
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_26_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_56_2:  '
+    FileOffset:      56
+    FilePath:        MAC.c
+    Replacements:    
+      - FilePath:        'C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC\MAC\solution1\.autopilot\db\MAC.pp.0.c'
+        Offset:          46306
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_56_2: '
+...

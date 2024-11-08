@@ -1,0 +1,22 @@
+   Build using "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_MAC.cpp
+   Compiling (apcc) MAC_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'chait' on host 'laptop-ho0mvfja' (Windows NT_amd64 version 6.2) on Wed Oct 30 15:13:30 +0530 2024
+INFO: [HLS 200-10] In directory 'C:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.342 seconds; peak allocated memory: 8.125 MB.
+   Compiling (apcc) MAC.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'chait' on host 'laptop-ho0mvfja' (Windows NT_amd64 version 6.2) on Wed Oct 30 15:13:34 +0530 2024
+INFO: [HLS 200-10] In directory 'C:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.296 seconds; peak allocated memory: 8.922 MB.
+   Compiling apatb_MAC_ir.ll
+   Generating cosim.tv.exe

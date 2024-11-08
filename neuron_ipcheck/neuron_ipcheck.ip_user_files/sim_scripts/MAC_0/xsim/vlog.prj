@@ -1,0 +1,14 @@
+verilog xil_defaultlib  \
+"../../../ipstatic/hdl/verilog/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1.v" \
+"../../../ipstatic/hdl/verilog/MAC_fcmp_32ns_32ns_1_2_no_dsp_1.v" \
+"../../../ipstatic/hdl/verilog/MAC_flow_control_loop_pipe.v" \
+"../../../ipstatic/hdl/verilog/MAC_fmul_32ns_32ns_32_4_max_dsp_1.v" \
+"../../../ipstatic/hdl/verilog/MAC.v" \
+"../../../ipstatic/hdl/ip/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip.v" \
+"../../../ipstatic/hdl/ip/MAC_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v" \
+"../../../ipstatic/hdl/ip/MAC_fmul_32ns_32ns_32_4_max_dsp_1_ip.v" \
+"../../../../neuron_ipcheck.gen/sources_1/ip/MAC_0/sim/MAC_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

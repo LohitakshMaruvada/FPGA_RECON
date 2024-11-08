@@ -1,0 +1,5 @@
+C:\Users\chait\OneDrive\Desktop\FPGA\Project\tanh\cordic_tanh\solution1\.autopilot\db\tanh.pp.0.c:888:5: warning: Added loop label VITIS_LOOP_14_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < 5; i++)
+    ^~~
+    VITIS_LOOP_14_1: 
+C:\Users\chait\OneDrive\Desktop\FPGA\Project\tanh\cordic_tanh\solution1\.autopilot\db\tanh.pp.0.c:888:5: note: FIX-IT applied suggested code changes

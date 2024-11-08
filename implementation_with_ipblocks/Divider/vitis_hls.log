@@ -1,0 +1,49 @@
+INFO: [HLS 200-10] Running '/home/lohitaksh/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'lohitaksh' on host 'GU603VV' (Linux_x86_64 version 6.8.0-48-generic) on Thu Nov 07 18:13:13 IST 2024
+INFO: [HLS 200-10] On os Ubuntu 22.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/lohitaksh/FPGA_project/Divider'
+Sourcing Tcl script '/home/lohitaksh/FPGA_project/Divider/Divider_hls/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source /home/lohitaksh/FPGA_project/Divider/Divider_hls/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project Divider_hls 
+INFO: [HLS 200-10] Opening project '/home/lohitaksh/FPGA_project/Divider/Divider_hls'.
+INFO: [HLS 200-1510] Running: set_top div 
+INFO: [HLS 200-1510] Running: add_files div.h 
+INFO: [HLS 200-10] Adding design file 'div.h' to the project
+INFO: [HLS 200-1510] Running: add_files div.cpp 
+INFO: [HLS 200-10] Adding design file 'div.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb div_tb.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'div_tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/lohitaksh/FPGA_project/Divider/Divider_hls/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7a35t-cpg236-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7a35t-cpg236-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+Running Dispatch Server on port: 46795
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/lohitaksh/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'div_fdiv_32ns_32ns_32_16_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'div_fdiv_32ns_32ns_32_16_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'div_fdiv_32ns_32ns_32_16_no_dsp_1_ip'...
+WARNING: [IP_Flow 19-4832] The IP name 'div_sitofp_32ns_32_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'div_sitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'div_sitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/lohitaksh/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 18:13:34 2024...
+INFO: [HLS 200-802] Generated output file Divider_hls/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 10.31 seconds. CPU system time: 0.55 seconds. Elapsed time: 13.08 seconds; current allocated memory: 8.004 MB.
+INFO: [HLS 200-112] Total CPU user time: 11.21 seconds. Total CPU system time: 0.69 seconds. Total elapsed time: 23.99 seconds; peak allocated memory: 221.781 MB.

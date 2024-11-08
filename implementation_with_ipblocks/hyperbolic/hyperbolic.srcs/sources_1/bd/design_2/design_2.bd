@@ -1,0 +1,135 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6A4A8B1948FBAA45",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../hyperbolic.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "vio_0": "",
+      "design_1_wrapper_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "design_2_vio_0_0",
+        "xci_path": "ip/design_2_vio_0_0/design_2_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "2"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "4"
+          },
+          "C_PROBE_OUT0_WIDTH": {
+            "value": "9"
+          },
+          "C_PROBE_OUT1_WIDTH": {
+            "value": "9"
+          },
+          "C_PROBE_OUT2_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "design_1_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:design_1_wrapper:1.0",
+        "xci_name": "design_2_design_1_wrapper_0_0",
+        "xci_path": "ip/design_2_design_1_wrapper_0_0/design_2_design_1_wrapper_0_0.xci",
+        "inst_hier_path": "design_1_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "design_1_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "a": {
+            "direction": "I",
+            "left": "8",
+            "right": "0"
+          },
+          "ap_done": {
+            "direction": "O"
+          },
+          "b": {
+            "direction": "I",
+            "left": "8",
+            "right": "0"
+          },
+          "c": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "tanh": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "vio_0/clk",
+          "design_1_wrapper_0/clk"
+        ]
+      },
+      "design_1_wrapper_0_ap_done": {
+        "ports": [
+          "design_1_wrapper_0/ap_done",
+          "vio_0/probe_in1"
+        ]
+      },
+      "design_1_wrapper_0_tanh": {
+        "ports": [
+          "design_1_wrapper_0/tanh",
+          "vio_0/probe_in0"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "design_1_wrapper_0/a"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "design_1_wrapper_0/b"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "design_1_wrapper_0/c"
+        ]
+      },
+      "vio_0_probe_out3": {
+        "ports": [
+          "vio_0/probe_out3",
+          "design_1_wrapper_0/sel"
+        ]
+      }
+    }
+  }
+}

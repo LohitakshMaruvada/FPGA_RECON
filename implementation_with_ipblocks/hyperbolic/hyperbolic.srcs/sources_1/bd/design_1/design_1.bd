@@ -1,0 +1,518 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8E84628AC29EA18E",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../hyperbolic.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "xbip_multadd_0": "",
+      "cordic_0": "",
+      "xlconstant_0": "",
+      "xlconstant_1": "",
+      "c_addsub_0": "",
+      "c_addsub_1": "",
+      "xlconstant_2": "",
+      "TwoOneMux_0": "",
+      "TwoOneMux_1": "",
+      "splitter_0": "",
+      "div_0": "",
+      "BitShift_0": "",
+      "BitShift_1": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "a": {
+        "direction": "I",
+        "left": "8",
+        "right": "0"
+      },
+      "b": {
+        "direction": "I",
+        "left": "8",
+        "right": "0"
+      },
+      "c": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "sel": {
+        "direction": "I"
+      },
+      "tanh": {
+        "direction": "O",
+        "left": "31",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default_prop"
+          }
+        }
+      },
+      "ap_done": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "xbip_multadd_0": {
+        "vlnv": "xilinx.com:ip:xbip_multadd:3.0",
+        "xci_name": "design_1_xbip_multadd_0_0",
+        "xci_path": "ip/design_1_xbip_multadd_0_0/design_1_xbip_multadd_0_0.xci",
+        "inst_hier_path": "xbip_multadd_0",
+        "parameters": {
+          "c_a_width": {
+            "value": "9"
+          },
+          "c_b_width": {
+            "value": "9"
+          },
+          "c_c_width": {
+            "value": "16"
+          },
+          "c_out_high": {
+            "value": "15"
+          },
+          "c_out_low": {
+            "value": "0"
+          }
+        }
+      },
+      "cordic_0": {
+        "vlnv": "xilinx.com:ip:cordic:6.0",
+        "xci_name": "design_1_cordic_0_0",
+        "xci_path": "ip/design_1_cordic_0_0/design_1_cordic_0_0.xci",
+        "inst_hier_path": "cordic_0",
+        "parameters": {
+          "Coarse_Rotation": {
+            "value": "false"
+          },
+          "Data_Format": {
+            "value": "SignedFraction"
+          },
+          "Functional_Selection": {
+            "value": "Sinh_and_Cosh"
+          },
+          "Input_Width": {
+            "value": "16"
+          },
+          "Output_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_0",
+        "xci_path": "ip/design_1_xlconstant_0_0/design_1_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_1_0",
+        "xci_path": "ip/design_1_xlconstant_1_0/design_1_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1"
+      },
+      "c_addsub_0": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "xci_name": "design_1_c_addsub_0_0",
+        "xci_path": "ip/design_1_c_addsub_0_0/design_1_c_addsub_0_0.xci",
+        "inst_hier_path": "c_addsub_0",
+        "parameters": {
+          "A_Type": {
+            "value": "Signed"
+          },
+          "A_Width": {
+            "value": "16"
+          },
+          "B_Type": {
+            "value": "Signed"
+          },
+          "B_Value": {
+            "value": "0000000000000000"
+          },
+          "B_Width": {
+            "value": "16"
+          },
+          "Implementation": {
+            "value": "Fabric"
+          },
+          "Latency": {
+            "value": "2"
+          },
+          "Latency_Configuration": {
+            "value": "Automatic"
+          },
+          "Out_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "c_addsub_1": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "xci_name": "design_1_c_addsub_1_0",
+        "xci_path": "ip/design_1_c_addsub_1_0/design_1_c_addsub_1_0.xci",
+        "inst_hier_path": "c_addsub_1",
+        "parameters": {
+          "A_Type": {
+            "value": "Signed"
+          },
+          "A_Width": {
+            "value": "16"
+          },
+          "B_Type": {
+            "value": "Signed"
+          },
+          "B_Value": {
+            "value": "0000000000000000"
+          },
+          "B_Width": {
+            "value": "16"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "Out_Width": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconstant_2": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_2_0",
+        "xci_path": "ip/design_1_xlconstant_2_0/design_1_xlconstant_2_0.xci",
+        "inst_hier_path": "xlconstant_2",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "16384"
+          },
+          "CONST_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "TwoOneMux_0": {
+        "vlnv": "xilinx.com:module_ref:TwoOneMux:1.0",
+        "xci_name": "design_1_TwoOneMux_0_0",
+        "xci_path": "ip/design_1_TwoOneMux_0_0/design_1_TwoOneMux_0_0.xci",
+        "inst_hier_path": "TwoOneMux_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "TwoOneMux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "in2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": [
+                  "xilinx.com:interface:datatypes:1.0 {",
+                  "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+                  "{} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+                  "bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 16",
+                  "}"
+                ],
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "val": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "TwoOneMux_1": {
+        "vlnv": "xilinx.com:module_ref:TwoOneMux:1.0",
+        "xci_name": "design_1_TwoOneMux_0_1",
+        "xci_path": "ip/design_1_TwoOneMux_0_1/design_1_TwoOneMux_0_1.xci",
+        "inst_hier_path": "TwoOneMux_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "TwoOneMux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in1": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "in2": {
+            "direction": "I",
+            "left": "15",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": [
+                  "xilinx.com:interface:datatypes:1.0 {",
+                  "DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum",
+                  "{} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format",
+                  "bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 16",
+                  "}"
+                ],
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "sel": {
+            "direction": "I"
+          },
+          "val": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "splitter_0": {
+        "vlnv": "xilinx.com:module_ref:splitter:1.0",
+        "xci_name": "design_1_splitter_0_0",
+        "xci_path": "ip/design_1_splitter_0_0/design_1_splitter_0_0.xci",
+        "inst_hier_path": "splitter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "splitter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mix": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "sinh": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "cosh": {
+            "direction": "O",
+            "left": "31",
+            "right": "16"
+          }
+        }
+      },
+      "div_0": {
+        "vlnv": "xilinx.com:hls:div:1.0",
+        "xci_name": "design_1_div_0_0",
+        "xci_path": "ip/design_1_div_0_0/design_1_div_0_0.xci",
+        "inst_hier_path": "div_0"
+      },
+      "BitShift_0": {
+        "vlnv": "xilinx.com:module_ref:BitShift:1.0",
+        "xci_name": "design_1_BitShift_0_0",
+        "xci_path": "ip/design_1_BitShift_0_0/design_1_BitShift_0_0.xci",
+        "inst_hier_path": "BitShift_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BitShift",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I"
+          },
+          "unshifted": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "shifted": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "BitShift_1": {
+        "vlnv": "xilinx.com:module_ref:BitShift:1.0",
+        "xci_name": "design_1_BitShift_1_0",
+        "xci_path": "ip/design_1_BitShift_1_0/design_1_BitShift_1_0.xci",
+        "inst_hier_path": "BitShift_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "BitShift",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sel": {
+            "direction": "I"
+          },
+          "unshifted": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "shifted": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "BitShift_0_shifted": {
+        "ports": [
+          "BitShift_0/shifted",
+          "div_0/b"
+        ]
+      },
+      "BitShift_1_shifted": {
+        "ports": [
+          "BitShift_1/shifted",
+          "div_0/a"
+        ]
+      },
+      "TwoOneMux_0_out": {
+        "ports": [
+          "TwoOneMux_0/val",
+          "BitShift_0/unshifted"
+        ]
+      },
+      "TwoOneMux_1_val": {
+        "ports": [
+          "TwoOneMux_1/val",
+          "BitShift_1/unshifted"
+        ]
+      },
+      "a_1": {
+        "ports": [
+          "a",
+          "xbip_multadd_0/A"
+        ]
+      },
+      "b_1": {
+        "ports": [
+          "b",
+          "xbip_multadd_0/B"
+        ]
+      },
+      "c_1": {
+        "ports": [
+          "c",
+          "xbip_multadd_0/C"
+        ]
+      },
+      "c_addsub_0_S": {
+        "ports": [
+          "c_addsub_0/S",
+          "c_addsub_1/A",
+          "TwoOneMux_1/in2"
+        ]
+      },
+      "c_addsub_1_S": {
+        "ports": [
+          "c_addsub_1/S",
+          "TwoOneMux_0/in2"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "xbip_multadd_0/CLK",
+          "cordic_0/aclk",
+          "c_addsub_0/CLK",
+          "c_addsub_1/CLK",
+          "div_0/ap_clk"
+        ]
+      },
+      "cordic_0_m_axis_dout_tdata": {
+        "ports": [
+          "cordic_0/m_axis_dout_tdata",
+          "splitter_0/mix"
+        ]
+      },
+      "div_0_ap_done": {
+        "ports": [
+          "div_0/ap_done",
+          "ap_done"
+        ]
+      },
+      "div_0_ap_return": {
+        "ports": [
+          "div_0/ap_return",
+          "tanh"
+        ]
+      },
+      "sel_1": {
+        "ports": [
+          "sel",
+          "TwoOneMux_0/sel",
+          "TwoOneMux_1/sel",
+          "BitShift_0/sel",
+          "BitShift_1/sel"
+        ]
+      },
+      "splitter_0_cosh": {
+        "ports": [
+          "splitter_0/cosh",
+          "c_addsub_0/A",
+          "TwoOneMux_0/in1"
+        ]
+      },
+      "splitter_0_sinh": {
+        "ports": [
+          "splitter_0/sinh",
+          "c_addsub_0/B",
+          "TwoOneMux_1/in1"
+        ]
+      },
+      "xbip_multadd_0_P": {
+        "ports": [
+          "xbip_multadd_0/P",
+          "cordic_0/s_axis_phase_tdata"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "xbip_multadd_0/SUBTRACT",
+          "xbip_multadd_0/SCLR",
+          "div_0/ap_rst"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "xbip_multadd_0/CE",
+          "c_addsub_1/CE",
+          "div_0/ap_start",
+          "c_addsub_0/CE"
+        ]
+      },
+      "xlconstant_2_dout": {
+        "ports": [
+          "xlconstant_2/dout",
+          "c_addsub_1/B"
+        ]
+      }
+    }
+  }
+}

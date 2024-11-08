@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"blk_tb_func_synth.v" \
+"../../../../../hyperbolic.srcs/sources_1/new/2to1Mux.v" \
+"../../../../../hyperbolic.srcs/sources_1/new/splitter.v" \
+"../../../../../hyperbolic.srcs/sources_1/new/BitShift14.v" \
+"../../../../../hyperbolic.srcs/sim_1/new/blk_tb.v" \
+
+# Do not sort compile order
+nosort

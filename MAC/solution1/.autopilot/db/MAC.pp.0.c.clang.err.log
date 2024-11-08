@@ -1,0 +1,7 @@
+C:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution1/csynth.tcl:15:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=MAC_XLX_SEP_ PragmaOptions=name=MAC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=MAC
+        ^
+C:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution1/directives.tcl:6:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=MAC_XLX_SEP_ PragmaOptions=name=MAC_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=MAC
+        ^
+2 warnings generated.

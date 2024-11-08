@@ -1,0 +1,1136 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov  8 13:47:31 2024
+# Process ID: 5808
+# Current directory: /home/lohitaksh/FPGA_project/hyperbolic
+# Command line: vivado
+# Log file: /home/lohitaksh/FPGA_project/hyperbolic/vivado.log
+# Journal file: /home/lohitaksh/FPGA_project/hyperbolic/vivado.jou
+# Running On: GU603VV, OS: Linux, CPU Frequency: 680.670 MHz, CPU Physical cores: 10, Host memory: 16403 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /home/lohitaksh/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.xpr
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lohitaksh/FPGA_project/Divider/Divider_hls/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/lohitaksh/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 6658.211 ; gain = 99.000 ; free physical = 7495 ; free virtual = 28393
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file </home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:xbip_multadd:3.0 - xbip_multadd_0
+Adding component instance block -- xilinx.com:ip:cordic:6.0 - cordic_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:c_addsub:12.0 - c_addsub_0
+Adding component instance block -- xilinx.com:ip:c_addsub:12.0 - c_addsub_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:module_ref:TwoOneMux:1.0 - TwoOneMux_0
+Adding component instance block -- xilinx.com:module_ref:TwoOneMux:1.0 - TwoOneMux_1
+Adding component instance block -- xilinx.com:module_ref:splitter:1.0 - splitter_0
+Adding component instance block -- xilinx.com:hls:div:1.0 - div_0
+Adding component instance block -- xilinx.com:module_ref:BitShift:1.0 - BitShift_0
+Adding component instance block -- xilinx.com:module_ref:BitShift:1.0 - BitShift_1
+Successfully read diagram <design_1> from block design file </home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd>
+update_compile_order -fileset sources_1
+reset_project
+launch_runs impl_1 -jobs 14
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : </home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+Verilog Output written to : /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/synth/design_1.v
+Verilog Output written to : /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xbip_multadd_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block cordic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block c_addsub_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block c_addsub_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block TwoOneMux_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block TwoOneMux_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block splitter_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block div_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BitShift_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BitShift_1 .
+Exporting to file /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_BitShift_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_BitShift_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_TwoOneMux_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_TwoOneMux_0_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_c_addsub_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_c_addsub_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_cordic_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_div_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_splitter_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_xbip_multadd_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_BitShift_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_TwoOneMux_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_BitShift_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_TwoOneMux_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_c_addsub_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_c_addsub_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_cordic_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_div_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_splitter_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbip_multadd_0_0
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_BitShift_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_BitShift_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_TwoOneMux_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_TwoOneMux_0_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_c_addsub_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_c_addsub_1_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_cordic_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_div_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_splitter_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_xbip_multadd_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_BitShift_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_TwoOneMux_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_BitShift_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_splitter_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_TwoOneMux_0_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbip_multadd_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_c_addsub_1_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_c_addsub_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_cordic_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_div_0_0
+Wrote  : </home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd> 
+Verilog Output written to : /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_2/synth/design_2.v
+Verilog Output written to : /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_2/sim/design_2.v
+Verilog Output written to : /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block design_1_wrapper_0 .
+Exporting to file /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Hardware Definition File /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_2/synth/design_2.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_2_design_1_wrapper_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_2_vio_0_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_2_design_1_wrapper_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_2_vio_0_0
+[Fri Nov  8 14:11:50 2024] Launched design_1_xbip_multadd_0_0_synth_1, design_1_c_addsub_1_0_synth_1, design_1_TwoOneMux_0_0_synth_1, design_1_TwoOneMux_0_1_synth_1, design_1_splitter_0_0_synth_1, design_1_div_0_0_synth_1, design_1_BitShift_0_0_synth_1, design_1_BitShift_1_0_synth_1, design_1_cordic_0_0_synth_1, design_1_c_addsub_0_0_synth_1, design_2_vio_0_0_synth_1, design_2_design_1_wrapper_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_xbip_multadd_0_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_xbip_multadd_0_0_synth_1/runme.log
+design_1_c_addsub_1_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_c_addsub_1_0_synth_1/runme.log
+design_1_TwoOneMux_0_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_TwoOneMux_0_0_synth_1/runme.log
+design_1_TwoOneMux_0_1_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_TwoOneMux_0_1_synth_1/runme.log
+design_1_splitter_0_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_splitter_0_0_synth_1/runme.log
+design_1_div_0_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_div_0_0_synth_1/runme.log
+design_1_BitShift_0_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_BitShift_0_0_synth_1/runme.log
+design_1_BitShift_1_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_BitShift_1_0_synth_1/runme.log
+design_1_cordic_0_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_cordic_0_0_synth_1/runme.log
+design_1_c_addsub_0_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_1_c_addsub_0_0_synth_1/runme.log
+design_2_vio_0_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_2_vio_0_0_synth_1/runme.log
+design_2_design_1_wrapper_0_0_synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/design_2_design_1_wrapper_0_0_synth_1/runme.log
+synth_1: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/synth_1/runme.log
+[Fri Nov  8 14:11:50 2024] Launched impl_1...
+Run output will be captured here: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:42 ; elapsed = 00:00:20 . Memory (MB): peak = 7135.270 ; gain = 165.348 ; free physical = 7368 ; free virtual = 28226
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 7155.281 ; gain = 0.000 ; free physical = 10521 ; free virtual = 27655
+INFO: [Netlist 29-17] Analyzing 604 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.45 . Memory (MB): peak = 7620.430 ; gain = 5.000 ; free physical = 9983 ; free virtual = 27200
+Restored from archive | CPU: 0.450000 secs | Memory: 6.224556 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.45 ; elapsed = 00:00:00.45 . Memory (MB): peak = 7620.430 ; gain = 5.000 ; free physical = 9983 ; free virtual = 27200
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7620.430 ; gain = 0.000 ; free physical = 9983 ; free virtual = 27200
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 7853.668 ; gain = 698.387 ; free physical = 9799 ; free virtual = 27058
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd}
+Reading block design file </home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd>...
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Adding component instance block -- xilinx.com:module_ref:design_1_wrapper:1.0 - design_1_wrapper_0
+Successfully read diagram <design_2> from block design file </home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd>
+update_module_reference design_2_design_1_wrapper_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/lohitaksh/FPGA_project/Divider/Divider_hls/solution1'.
+Upgrading '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-3420] Updated design_2_design_1_wrapper_0_0 to use current project options
+Wrote  : </home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd> 
+set_property is_enabled false [get_files  /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v]
+update_compile_order -fileset sources_1
+reset_run synth_1
+INFO: [Project 1-1160] Copying file /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/synth_1/design_2_wrapper.dcp to /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -jobs 14
+[Fri Nov  8 14:43:21 2024] Launched synth_1...
+Run output will be captured here: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/synth_1/runme.log
+[Fri Nov  8 14:43:21 2024] Launched impl_1...
+Run output will be captured here: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/runme.log
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.06 . Memory (MB): peak = 8150.145 ; gain = 0.000 ; free physical = 9716 ; free virtual = 26995
+INFO: [Netlist 29-17] Analyzing 586 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.31 . Memory (MB): peak = 8150.145 ; gain = 0.000 ; free physical = 9624 ; free virtual = 26904
+Restored from archive | CPU: 0.310000 secs | Memory: -5.305450 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.31 . Memory (MB): peak = 8150.145 ; gain = 0.000 ; free physical = 9624 ; free virtual = 26904
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+save_constraints
+report_utilization -name utilization_1
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation  -mode post-synthesis -type functional
+INFO: [Vivado 12-12493] Simulation top is 'blk_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.sim/sim_1/synth/func/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/lohitaksh/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_BitShift_0_0/design_1_BitShift_0_0.dcp' for cell 'design_1_i/BitShift_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_BitShift_1_0/design_1_BitShift_1_0.dcp' for cell 'design_1_i/BitShift_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_TwoOneMux_0_0/design_1_TwoOneMux_0_0.dcp' for cell 'design_1_i/TwoOneMux_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_TwoOneMux_0_1/design_1_TwoOneMux_0_1.dcp' for cell 'design_1_i/TwoOneMux_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_c_addsub_0_0/design_1_c_addsub_0_0.dcp' for cell 'design_1_i/c_addsub_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_c_addsub_1_0/design_1_c_addsub_1_0.dcp' for cell 'design_1_i/c_addsub_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_cordic_0_0/design_1_cordic_0_0.dcp' for cell 'design_1_i/cordic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_div_0_0/design_1_div_0_0.dcp' for cell 'design_1_i/div_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_splitter_0_0/design_1_splitter_0_0.dcp' for cell 'design_1_i/splitter_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/ip/design_1_xbip_multadd_0_0/design_1_xbip_multadd_0_0.dcp' for cell 'design_1_i/xbip_multadd_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.06 . Memory (MB): peak = 8150.145 ; gain = 0.000 ; free physical = 9151 ; free virtual = 26616
+INFO: [Netlist 29-17] Analyzing 586 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/constrs_1/new/constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8150.145 ; gain = 0.000 ; free physical = 9048 ; free virtual = 26509
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.sim/sim_1/synth/func/xsim/blk_tb_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.sim/sim_1/synth/func/xsim/blk_tb_func_synth.v
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/home/lohitaksh/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'blk_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.sim/sim_1/synth/func/xsim'
+xvlog --incr --relax -prj blk_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.sim/sim_1/synth/func/xsim/blk_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_BitShift_0_0
+INFO: [VRFC 10-311] analyzing module design_1_BitShift_0_0_BitShift
+INFO: [VRFC 10-311] analyzing module design_1_BitShift_1_0
+INFO: [VRFC 10-311] analyzing module design_1_BitShift_1_0_BitShift
+INFO: [VRFC 10-311] analyzing module design_1_TwoOneMux_0_0
+INFO: [VRFC 10-311] analyzing module design_1_TwoOneMux_0_0_TwoOneMux
+INFO: [VRFC 10-311] analyzing module design_1_TwoOneMux_0_1
+INFO: [VRFC 10-311] analyzing module design_1_TwoOneMux_0_1_TwoOneMux
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_1_0
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_div
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_div_fdiv_32ns_32ns_32_16_no_dsp_1
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_div_fdiv_32ns_32ns_32_16_no_dsp_1_ip
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_div_sitofp_32ns_32_6_no_dsp_1
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_div_sitofp_32ns_32_6_no_dsp_1_0
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_div_sitofp_32ns_32_6_no_dsp_1_ip
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_div_sitofp_32ns_32_6_no_dsp_1_ip_12
+INFO: [VRFC 10-311] analyzing module design_1_splitter_0_0
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-311] analyzing module design_1_xbip_multadd_0_0
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_addsub_v12_0_14
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_addsub_v12_0_14_fabric_legacy
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_addsub_v12_0_14_fabric_legacy__parameterized1
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_addsub_v12_0_14_fabric_legacy__parameterized3
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_addsub_v12_0_14_legacy
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_addsub_v12_0_14_lut6_legacy
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_addsub_v12_0_14_lut6_legacy__parameterized1
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_addsub_v12_0_14_lut6_legacy__parameterized3
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_addsub_v12_0_14_viv
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_reg_fd_v12_0_6_viv
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_reg_fd_v12_0_6_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_reg_fd_v12_0_6_viv__parameterized1_0
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_reg_fd_v12_0_6_viv__parameterized1_1
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_0_0_c_reg_fd_v12_0_6_viv__parameterized1_2
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_1_0_c_addsub_v12_0_14
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_1_0_c_addsub_v12_0_14_fabric_legacy
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_1_0_c_addsub_v12_0_14_legacy
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_1_0_c_addsub_v12_0_14_lut6_legacy
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_1_0_c_addsub_v12_0_14_viv
+INFO: [VRFC 10-311] analyzing module design_1_c_addsub_1_0_c_reg_fd_v12_0_6_viv
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_101
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_102
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_112
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_117
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_118
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_128
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_133
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_134
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_143
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_144
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_15
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_155
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_160
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_161
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_172
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_177
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_178
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_188
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_193
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_194
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_20
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_205
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_21
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_210
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_211
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_221
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_226
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_227
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_237
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_242
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_243
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_253
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_258
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_259
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_269
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_274
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_275
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_31
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_36
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_37
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_4
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_47
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_5
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_52
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_53
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_63
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_68
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_69
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_79
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_84
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_85
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_addsub_96
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_104
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_108
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_11
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_114
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_120
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_124
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_130
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_136
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_140
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_146
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_150
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_157
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_163
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_167
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_17
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_174
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_180
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_184
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_190
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_196
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_200
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_207
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_213
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_217
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_223
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_229
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_23
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_233
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_239
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_245
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_249
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_255
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_261
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_265
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_27
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_271
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_277
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_281
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_33
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_39
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_43
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_49
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_55
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_59
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_65
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_7
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_71
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_75
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_81
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_87
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_91
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_fabric_legacy_98
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_10
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_103
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_107
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_113
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_119
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_123
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_129
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_135
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_139
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_145
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_149
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_156
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_16
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_162
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_166
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_173
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_179
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_183
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_189
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_195
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_199
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_206
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_212
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_216
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_22
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_222
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_228
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_232
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_238
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_244
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_248
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_254
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_26
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_260
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_264
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_270
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_276
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_280
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_32
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_38
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_42
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_48
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_54
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_58
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_6
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_64
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_70
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_74
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_80
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_86
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_90
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_legacy_97
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_105
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_109
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_115
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_12
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_121
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_125
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_131
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_137
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_141
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_147
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_151
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_158
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_164
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_168
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_175
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_18
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_181
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_185
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_191
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_197
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_201
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_208
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_214
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_218
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_224
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_230
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_234
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_24
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_240
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_246
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_250
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_256
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_262
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_266
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_272
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_278
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_28
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_282
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_34
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_40
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_44
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_50
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_56
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_60
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_66
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_72
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_76
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_8
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_82
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_88
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_92
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_lut6_legacy_99
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__1
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__10
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__11
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__12
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__13
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__14
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__15
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__16
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__17
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__18
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__19
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__2
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__20
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__21
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__22
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__23
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__24
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__25
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__26
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__27
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__28
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__29
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__30
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__31
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__32
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__33
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__34
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__35
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__36
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__37
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__38
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__39
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__4
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__40
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__41
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__42
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__43
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__44
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__45
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__46
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__47
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__48
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__49
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__5
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__50
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__51
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__52
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__53
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__6
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__7
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__8
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_addsub_v12_0_14_viv__9
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_100
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_106
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_110
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_116
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_122
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_126
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_13
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_132
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_138
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_142
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_148
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_152
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_159
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_165
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_169
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_176
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_182
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_186
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_19
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_192
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_198
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_202
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_209
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_215
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_219
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_225
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_231
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_235
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_241
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_247
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_25
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_251
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_257
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_263
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_267
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_273
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_279
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_283
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_29
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_35
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_41
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_45
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_51
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_57
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_61
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_67
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_73
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_77
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_83
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_89
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_9
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_c_reg_fd_v12_0_6_viv_93
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_ctrl_slice_par
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_ctrl_slice_par_153
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized1
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized11
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized13
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized15
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized17
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized19
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized21
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized23
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized23_203
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized25
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized27
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized29
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized3
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized5
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized5_94
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized7
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_dat_acc_slice_par__parameterized9
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized1
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized11
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized13
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized15
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized17
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized19
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized21
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized23
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized23_2
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized25
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized27
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized29
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized3
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized5
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized5_3
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized7
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_eng_slice_par__parameterized9
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_inp_config
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_out_config
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_111
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_127
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_14
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_154
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_171
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_187
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_204
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_220
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_236
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_252
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_268
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_30
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_46
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_62
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_78
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_pha_acc_slice_par_95
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_round
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_round_0
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_v6_0_18
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_v6_0_18_synth
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_cordic_v6_0_18_viv
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_delay__parameterized2
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_delay__parameterized2_170
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_delay__parameterized4
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_delay__parameterized4_1
+INFO: [VRFC 10-311] analyzing module design_1_cordic_0_0_xbip_pipe_v3_0_6_viv
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_100
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_105
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_109
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_115
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_120
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_130
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_135
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_140
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_145
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_150
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_151
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain_95
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_102
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_106
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_112
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_117
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_123
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_127
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_132
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_137
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_142
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_147
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_92
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized0_97
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized1
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized1_27
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized1_53
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized2
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized3
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized4
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized5
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized5_16
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized6
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized6_38
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized6_39
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized6_5
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized7
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized7_24
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized8
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_carry_chain__parameterized8_25
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized13
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized13_153
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized14
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized15
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized15_152
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized15_30
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized15_40
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized15_42
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized15_6
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized15_8
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized16
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized18
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized19
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized20
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized21
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized22
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized33
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized33_46
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized34
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized34_1
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized34_22
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized34_28
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized36
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized36_3
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized36_34
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized36_35
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized37
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized37_31
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_57
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_60
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_63
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_66
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_68
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_71
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_74
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_81
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_84
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_87
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized3_90
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized40
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized40_49
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized41
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized41_48
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_103
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_107
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_113
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_118
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_124
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_128
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_133
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_138
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_143
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_148
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_93
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized6_98
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized7
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized7_75
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized7_78
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_delay__parameterized9
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_fix_to_flt_conv
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_fix_to_flt_conv_13
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_fix_to_flt_conv_exp
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_fix_to_flt_conv_exp_15
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_floating_point_v7_1_15
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_floating_point_v7_1_15__parameterized0
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_floating_point_v7_1_15__parameterized0__1
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_floating_point_v7_1_15_viv
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_floating_point_v7_1_15_viv__parameterized1
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_floating_point_v7_1_15_viv__parameterized1__1
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_dec_op
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_dec_op_20
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_dec_op_lat
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_exp
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_54
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_55
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_58
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_61
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_64
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_69
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_72
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_76
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_79
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_82
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_85
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub_88
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_56
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_59
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_62
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_65
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_67
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_70
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_73
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_77
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_80
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_83
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_86
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_div_mant_addsub__parameterized0_89
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_round_bit
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_round_bit_26
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_flt_round_bit_52
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_lead_zero_encode
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_lead_zero_encode_17
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_mux4__parameterized0
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_mux4__parameterized0_36
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_mux4__parameterized0_37
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_mux4__parameterized0_4
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_norm_zero_det
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_norm_zero_det_18
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_renorm_and_round_logic
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_renorm_and_round_logic__parameterized0
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_renorm_and_round_logic__parameterized0_21
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_shift_msb_first
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_shift_msb_first_19
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_104
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_108
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_114
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_119
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_125
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_129
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_134
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_139
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_144
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_149
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_94
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized13_99
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized15
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized15_110
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized15_121
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized17
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized17_51
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized19
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized23
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized23_155
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized23_157
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized25
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized27
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized27_154
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized27_33
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized27_41
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized27_43
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized27_7
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized27_9
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized31
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized33
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized33_156
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized35
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized37
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized52
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized52_14
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized56
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized56_11
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized56_2
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized56_23
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized56_29
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized56_47
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized60
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized60_10
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized60_44
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized60_45
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized62
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized62_32
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized68
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized68_50
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_101
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_111
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_116
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_122
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_126
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_131
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_136
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_141
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_146
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_91
+INFO: [VRFC 10-311] analyzing module design_1_div_0_0_xbip_pipe_v3_0_6_viv__parameterized9_96
+INFO: [VRFC 10-311] analyzing module design_1_xbip_multadd_0_0_multadd_dsp
+INFO: [VRFC 10-311] analyzing module design_1_xbip_multadd_0_0_xbip_dsp48_multadd_synth
+INFO: [VRFC 10-311] analyzing module design_1_xbip_multadd_0_0_xbip_dsp48_multadd_v3_0_6_viv
+INFO: [VRFC 10-311] analyzing module design_1_xbip_multadd_0_0_xbip_dsp48e1_wrapper_v3_0
+INFO: [VRFC 10-311] analyzing module design_1_xbip_multadd_0_0_xbip_multadd_v3_0_17
+INFO: [VRFC 10-311] analyzing module design_1_xbip_multadd_0_0_xbip_multadd_v3_0_17_viv
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/new/2to1Mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TwoOneMux
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/new/splitter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module splitter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/new/BitShift14.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BitShift
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sim_1/new/blk_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.sim/sim_1/synth/func/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot blk_tb_func_synth xil_defaultlib.blk_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/lohitaksh/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot blk_tb_func_synth xil_defaultlib.blk_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module xil_defaultlib.design_1_BitShift_0_0_BitShift
+Compiling module xil_defaultlib.design_1_BitShift_0_0
+Compiling module xil_defaultlib.design_1_BitShift_1_0_BitShift
+Compiling module xil_defaultlib.design_1_BitShift_1_0
+Compiling module xil_defaultlib.design_1_TwoOneMux_0_0_TwoOneMux
+Compiling module xil_defaultlib.design_1_TwoOneMux_0_0
+Compiling module xil_defaultlib.design_1_TwoOneMux_0_1_TwoOneMux
+Compiling module xil_defaultlib.design_1_TwoOneMux_0_1
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module xil_defaultlib.design_1_c_addsub_0_0
+Compiling module xil_defaultlib.design_1_c_addsub_1_0
+Compiling module unisims_ver.SRLC32E_default
+Compiling module xil_defaultlib.design_1_cordic_0_0
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.design_1_div_0_0_div_fdiv_32ns_3...
+Compiling module xil_defaultlib.design_1_div_0_0_div_fdiv_32ns_3...
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.design_1_div_0_0_div_sitofp_32ns...
+Compiling module xil_defaultlib.design_1_div_0_0_div_sitofp_32ns...
+Compiling module xil_defaultlib.design_1_div_0_0_div_sitofp_32ns...
+Compiling module xil_defaultlib.design_1_div_0_0_div_sitofp_32ns...
+Compiling module xil_defaultlib.design_1_div_0_0_div
+Compiling module xil_defaultlib.design_1_div_0_0
+Compiling module xil_defaultlib.design_1_splitter_0_0
+Compiling module unisims_ver.DSP48E1(ADREG=0,CARRYINSELREG=0,...
+Compiling module xil_defaultlib.design_1_xbip_multadd_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.blk_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot blk_tb_func_synth
+execute_script: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 8150.145 ; gain = 0.000 ; free physical = 8780 ; free virtual = 26388
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "blk_tb_func_synth -key {Post-Synthesis:sim_1:Functional:blk_tb} -tclbatch {blk_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+source blk_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'blk_tb_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:29 ; elapsed = 00:00:25 . Memory (MB): peak = 8218.461 ; gain = 68.316 ; free physical = 8715 ; free virtual = 26338
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {1815 -425} [get_bd_ports sel]
+set_property location {-186 -82} [get_bd_ports sel]
+regenerate_bd_layout
+set_property location {8 2161 -3} [get_bd_cells BitShift_1]
+set_property location {7 1874 -1} [get_bd_cells TwoOneMux_1]
+set_property location {7 1932 -126} [get_bd_cells TwoOneMux_1]
+set_property location {8 2214 -138} [get_bd_cells BitShift_1]
+set_property location {4 1109 -185} [get_bd_cells splitter_0]
+set_property location {3 793 -169} [get_bd_cells cordic_0]
+set_property location {3 796 -180} [get_bd_cells cordic_0]
+set_property location {2 382 -179} [get_bd_cells xbip_multadd_0]
+set_property location {1 160 -497} [get_bd_cells xlconstant_1]
+set_property location {1 143 58} [get_bd_cells xlconstant_0]
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+regenerate_bd_layout
+undo
+INFO: [Common 17-17] undo 'regenerate_bd_layout'
+write_bd_layout -format pdf -orientation landscape /home/lohitaksh/FPGA_project/hyperbolic/design_1.pdf
+/home/lohitaksh/FPGA_project/hyperbolic/design_1.pdf
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+current_design impl_1
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd}

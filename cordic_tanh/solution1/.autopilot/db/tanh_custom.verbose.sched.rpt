@@ -1,0 +1,269 @@
+
+
+================================================================
+== Vitis HLS Report for 'tanh_custom'
+================================================================
+* Date:           Mon Nov  4 00:24:18 2024
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        cordic_tanh
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-cpg236-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.301 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       96|       96|  0.960 us|  0.960 us|   97|   97|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 18
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.61>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%angle_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %angle"   --->   Operation 19 'read' 'angle_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%y_loc = alloca i64 1"   --->   Operation 20 'alloca' 'y_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%x_2_loc = alloca i64 1"   --->   Operation 21 'alloca' 'x_2_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [2/2] (1.61ns)   --->   "%call_ln0 = call void @tanh_custom_Pipeline_VITIS_LOOP_14_1, i32 %angle_read, i32 %x_2_loc, i32 %y_loc, i32 %tanh_custom_tanh_in"   --->   Operation 22 'call' 'call_ln0' <Predicate = true> <Delay = 1.61> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 23 [1/2] (0.00ns)   --->   "%call_ln0 = call void @tanh_custom_Pipeline_VITIS_LOOP_14_1, i32 %angle_read, i32 %x_2_loc, i32 %y_loc, i32 %tanh_custom_tanh_in"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 6.30>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%x_2_loc_load = load i32 %x_2_loc"   --->   Operation 24 'load' 'x_2_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%y_loc_load = load i32 %y_loc"   --->   Operation 25 'load' 'y_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [16/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 26 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.30>
+ST_4 : Operation 27 [15/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 27 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.30>
+ST_5 : Operation 28 [14/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 28 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.30>
+ST_6 : Operation 29 [13/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 29 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 6.30>
+ST_7 : Operation 30 [12/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 30 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 6.30>
+ST_8 : Operation 31 [11/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 31 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 6.30>
+ST_9 : Operation 32 [10/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 32 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 6.30>
+ST_10 : Operation 33 [9/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 33 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 6.30>
+ST_11 : Operation 34 [8/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 34 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 6.30>
+ST_12 : Operation 35 [7/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 35 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 6.30>
+ST_13 : Operation 36 [6/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 36 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 6.30>
+ST_14 : Operation 37 [5/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 37 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 6.30>
+ST_15 : Operation 38 [4/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 38 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 6.30>
+ST_16 : Operation 39 [3/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 39 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 6.30>
+ST_17 : Operation 40 [2/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 40 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 6.30>
+ST_18 : Operation 41 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 0"   --->   Operation 41 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 42 [1/1] (0.00ns)   --->   "%spectopmodule_ln4 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [tanh.c:4]   --->   Operation 42 'spectopmodule' 'spectopmodule_ln4' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 43 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %angle"   --->   Operation 43 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %angle, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_18 : Operation 45 [1/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh.c:33]   --->   Operation 45 'fdiv' 'tan_hyperbolic' <Predicate = true> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 46 [1/1] (0.00ns)   --->   "%ret_ln37 = ret i32 %tan_hyperbolic" [tanh.c:37]   --->   Operation 46 'ret' 'ret_ln37' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.61ns
+The critical path consists of the following:
+	wire read operation ('angle') on port 'angle' [3]  (0 ns)
+	'call' operation ('call_ln0') to 'tanh_custom_Pipeline_VITIS_LOOP_14_1' [10]  (1.61 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 6.3ns
+The critical path consists of the following:
+	'load' operation ('x_2_loc_load') on local variable 'x_2_loc' [11]  (0 ns)
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 4>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 5>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 6>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 7>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 8>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 9>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 10>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 11>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 12>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 13>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 14>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 15>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 16>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 17>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+ <State 18>: 6.3ns
+The critical path consists of the following:
+	'fdiv' operation ('tan_hyperbolic', tanh.c:33) [13]  (6.3 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

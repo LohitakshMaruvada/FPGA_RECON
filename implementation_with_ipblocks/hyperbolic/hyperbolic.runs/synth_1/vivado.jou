@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov  8 14:43:22 2024
+# Process ID: 70576
+# Current directory: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/synth_1/vivado.jou
+# Running On: GU603VV, OS: Linux, CPU Frequency: 1769.078 MHz, CPU Physical cores: 10, Host memory: 16403 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

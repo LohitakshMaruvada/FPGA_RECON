@@ -1,0 +1,858 @@
+
+
+================================================================
+== Vitis HLS Report for 'neuron'
+================================================================
+* Date:           Fri Nov  8 14:24:51 2024
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        neuron
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: artix7
+* Target device:  xc7a35t-cpg236-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.097 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      110|      110|  1.100 us|  1.100 us|  111|  111|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------+---------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                           |                                 |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |                  Instance                 |              Module             |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +-------------------------------------------+---------------------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_neuron_Pipeline_VITIS_LOOP_15_1_fu_54  |neuron_Pipeline_VITIS_LOOP_15_1  |       79|       79|  0.790 us|  0.790 us|   79|   79|       no|
+        +-------------------------------------------+---------------------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 32
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.61>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%angle_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %angle"   --->   Operation 33 'read' 'angle_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%y_loc = alloca i64 1"   --->   Operation 34 'alloca' 'y_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%x_2_loc = alloca i64 1"   --->   Operation 35 'alloca' 'x_2_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 36 [2/2] (1.61ns)   --->   "%call_ln0 = call void @neuron_Pipeline_VITIS_LOOP_15_1, i32 %angle_read, i32 %x_2_loc, i32 %y_loc, i32 %neuron_tanh_in"   --->   Operation 36 'call' 'call_ln0' <Predicate = true> <Delay = 1.61> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 2.43>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%sel_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %sel"   --->   Operation 37 'read' 'sel_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 38 [1/2] (0.00ns)   --->   "%call_ln0 = call void @neuron_Pipeline_VITIS_LOOP_15_1, i32 %angle_read, i32 %x_2_loc, i32 %y_loc, i32 %neuron_tanh_in"   --->   Operation 38 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 39 [1/1] (2.43ns)   --->   "%icmp_ln38 = icmp_ne  i32 %sel_read, i32 0" [tanh_sigmoid.c:38]   --->   Operation 39 'icmp' 'icmp_ln38' <Predicate = true> <Delay = 2.43> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.43> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 5.92>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%y_loc_load = load i32 %y_loc"   --->   Operation 40 'load' 'y_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [7/7] (5.92ns)   --->   "%add9 = fadd i32 %y_loc_load, i32 1" [tanh_sigmoid.c:35]   --->   Operation 41 'fadd' 'add9' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 5.92>
+ST_4 : Operation 42 [6/7] (5.92ns)   --->   "%add9 = fadd i32 %y_loc_load, i32 1" [tanh_sigmoid.c:35]   --->   Operation 42 'fadd' 'add9' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.92>
+ST_5 : Operation 43 [5/7] (5.92ns)   --->   "%add9 = fadd i32 %y_loc_load, i32 1" [tanh_sigmoid.c:35]   --->   Operation 43 'fadd' 'add9' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.92>
+ST_6 : Operation 44 [4/7] (5.92ns)   --->   "%add9 = fadd i32 %y_loc_load, i32 1" [tanh_sigmoid.c:35]   --->   Operation 44 'fadd' 'add9' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 5.92>
+ST_7 : Operation 45 [3/7] (5.92ns)   --->   "%add9 = fadd i32 %y_loc_load, i32 1" [tanh_sigmoid.c:35]   --->   Operation 45 'fadd' 'add9' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 5.92>
+ST_8 : Operation 46 [2/7] (5.92ns)   --->   "%add9 = fadd i32 %y_loc_load, i32 1" [tanh_sigmoid.c:35]   --->   Operation 46 'fadd' 'add9' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 5.92>
+ST_9 : Operation 47 [1/7] (5.92ns)   --->   "%add9 = fadd i32 %y_loc_load, i32 1" [tanh_sigmoid.c:35]   --->   Operation 47 'fadd' 'add9' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 6.30>
+ST_10 : Operation 48 [1/1] (0.00ns)   --->   "%x_2_loc_load = load i32 %x_2_loc"   --->   Operation 48 'load' 'x_2_loc_load' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 49 [16/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 49 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 50 [7/7] (5.92ns)   --->   "%add8 = fadd i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 50 'fadd' 'add8' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 51 [7/7] (5.92ns)   --->   "%add1 = fadd i32 %add9, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 51 'fadd' 'add1' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 6.30>
+ST_11 : Operation 52 [15/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 52 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 53 [6/7] (5.92ns)   --->   "%add8 = fadd i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 53 'fadd' 'add8' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 54 [6/7] (5.92ns)   --->   "%add1 = fadd i32 %add9, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 54 'fadd' 'add1' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 6.30>
+ST_12 : Operation 55 [14/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 55 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 56 [5/7] (5.92ns)   --->   "%add8 = fadd i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 56 'fadd' 'add8' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 57 [5/7] (5.92ns)   --->   "%add1 = fadd i32 %add9, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 57 'fadd' 'add1' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 6.30>
+ST_13 : Operation 58 [13/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 58 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 59 [4/7] (5.92ns)   --->   "%add8 = fadd i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 59 'fadd' 'add8' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 60 [4/7] (5.92ns)   --->   "%add1 = fadd i32 %add9, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 60 'fadd' 'add1' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 6.30>
+ST_14 : Operation 61 [12/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 61 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 62 [3/7] (5.92ns)   --->   "%add8 = fadd i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 62 'fadd' 'add8' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 63 [3/7] (5.92ns)   --->   "%add1 = fadd i32 %add9, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 63 'fadd' 'add1' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 6.30>
+ST_15 : Operation 64 [11/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 64 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 65 [2/7] (5.92ns)   --->   "%add8 = fadd i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 65 'fadd' 'add8' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 66 [2/7] (5.92ns)   --->   "%add1 = fadd i32 %add9, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 66 'fadd' 'add1' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 6.30>
+ST_16 : Operation 67 [10/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 67 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 68 [1/7] (5.92ns)   --->   "%add8 = fadd i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 68 'fadd' 'add8' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 69 [1/7] (5.92ns)   --->   "%add1 = fadd i32 %add9, i32 %x_2_loc_load" [tanh_sigmoid.c:35]   --->   Operation 69 'fadd' 'add1' <Predicate = (icmp_ln38)> <Delay = 5.92> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 5.92> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 6.30>
+ST_17 : Operation 70 [9/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 70 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 71 [16/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 71 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 6.30>
+ST_18 : Operation 72 [8/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 72 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 73 [15/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 73 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 6.30>
+ST_19 : Operation 74 [7/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 74 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 75 [14/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 75 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 6.30>
+ST_20 : Operation 76 [6/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 76 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 77 [13/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 77 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 6.30>
+ST_21 : Operation 78 [5/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 78 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 79 [12/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 79 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 6.30>
+ST_22 : Operation 80 [4/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 80 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 81 [11/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 81 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 6.30>
+ST_23 : Operation 82 [3/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 82 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 83 [10/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 83 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 6.30>
+ST_24 : Operation 84 [2/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 84 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 85 [9/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 85 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 6.30>
+ST_25 : Operation 86 [1/16] (6.30ns)   --->   "%tan_hyperbolic = fdiv i32 %y_loc_load, i32 %x_2_loc_load" [tanh_sigmoid.c:34]   --->   Operation 86 'fdiv' 'tan_hyperbolic' <Predicate = (!icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 87 [8/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 87 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 6.30>
+ST_26 : Operation 88 [7/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 88 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 6.30>
+ST_27 : Operation 89 [6/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 89 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 6.30>
+ST_28 : Operation 90 [5/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 90 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 6.30>
+ST_29 : Operation 91 [4/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 91 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 6.30>
+ST_30 : Operation 92 [3/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 92 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 6.30>
+ST_31 : Operation 93 [2/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 93 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 7.09>
+ST_32 : Operation 94 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 0"   --->   Operation 94 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 95 [1/1] (0.00ns)   --->   "%spectopmodule_ln4 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1" [tanh_sigmoid.c:4]   --->   Operation 95 'spectopmodule' 'spectopmodule_ln4' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 96 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %angle"   --->   Operation 96 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 97 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %angle, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 97 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 98 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %sel"   --->   Operation 98 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 99 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %sel, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 99 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 100 [1/16] (6.30ns)   --->   "%sigmoid = fdiv i32 %add8, i32 %add1" [tanh_sigmoid.c:35]   --->   Operation 100 'fdiv' 'sigmoid' <Predicate = (icmp_ln38)> <Delay = 6.30> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 15> <II = 1> <Delay = 6.30> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 101 [1/1] (0.79ns)   --->   "%select_ln38 = select i1 %icmp_ln38, i32 %sigmoid, i32 %tan_hyperbolic" [tanh_sigmoid.c:38]   --->   Operation 101 'select' 'select_ln38' <Predicate = true> <Delay = 0.79> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_32 : Operation 102 [1/1] (0.00ns)   --->   "%ret_ln42 = ret i32 %select_ln38" [tanh_sigmoid.c:42]   --->   Operation 102 'ret' 'ret_ln42' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ angle]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ sel]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ neuron_tanh_in]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[1]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+angle_read        (read         ) [ 001000000000000000000000000000000]
+y_loc             (alloca       ) [ 011100000000000000000000000000000]
+x_2_loc           (alloca       ) [ 011111111110000000000000000000000]
+sel_read          (read         ) [ 000000000000000000000000000000000]
+call_ln0          (call         ) [ 000000000000000000000000000000000]
+icmp_ln38         (icmp         ) [ 000111111111111111111111111111111]
+y_loc_load        (load         ) [ 000011111111111111111111110000000]
+add9              (fadd         ) [ 000000000011111110000000000000000]
+x_2_loc_load      (load         ) [ 000000000001111111111111110000000]
+add8              (fadd         ) [ 000000000000000001111111111111111]
+add1              (fadd         ) [ 000000000000000001111111111111111]
+tan_hyperbolic    (fdiv         ) [ 000000000000000000000000001111111]
+specbitsmap_ln0   (specbitsmap  ) [ 000000000000000000000000000000000]
+spectopmodule_ln4 (spectopmodule) [ 000000000000000000000000000000000]
+specbitsmap_ln0   (specbitsmap  ) [ 000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 000000000000000000000000000000000]
+specbitsmap_ln0   (specbitsmap  ) [ 000000000000000000000000000000000]
+specinterface_ln0 (specinterface) [ 000000000000000000000000000000000]
+sigmoid           (fdiv         ) [ 000000000000000000000000000000000]
+select_ln38       (select       ) [ 000000000000000000000000000000000]
+ret_ln42          (ret          ) [ 000000000000000000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="angle">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="angle"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="sel">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="neuron_tanh_in">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="neuron_tanh_in"/><MemPortTyVec>1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.float"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="neuron_Pipeline_VITIS_LOOP_15_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1004" name="y_loc_fu_34">
+<pin_list>
+<pin id="35" dir="0" index="0" bw="1" slack="0"/>
+<pin id="36" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="y_loc/1 "/>
+</bind>
+</comp>
+
+<comp id="38" class="1004" name="x_2_loc_fu_38">
+<pin_list>
+<pin id="39" dir="0" index="0" bw="1" slack="0"/>
+<pin id="40" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="x_2_loc/1 "/>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="angle_read_read_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="32" slack="0"/>
+<pin id="44" dir="0" index="1" bw="32" slack="0"/>
+<pin id="45" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="angle_read/1 "/>
+</bind>
+</comp>
+
+<comp id="48" class="1004" name="sel_read_read_fu_48">
+<pin_list>
+<pin id="49" dir="0" index="0" bw="32" slack="0"/>
+<pin id="50" dir="0" index="1" bw="32" slack="0"/>
+<pin id="51" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="sel_read/2 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="grp_neuron_Pipeline_VITIS_LOOP_15_1_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="0" slack="0"/>
+<pin id="56" dir="0" index="1" bw="32" slack="0"/>
+<pin id="57" dir="0" index="2" bw="32" slack="0"/>
+<pin id="58" dir="0" index="3" bw="32" slack="0"/>
+<pin id="59" dir="0" index="4" bw="32" slack="0"/>
+<pin id="60" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/1 "/>
+</bind>
+</comp>
+
+<comp id="64" class="1004" name="grp_fu_64">
+<pin_list>
+<pin id="65" dir="0" index="0" bw="32" slack="0"/>
+<pin id="66" dir="0" index="1" bw="32" slack="0"/>
+<pin id="67" dir="1" index="2" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="fadd(9) " fcode="fadd"/>
+<opset="add9/3 add8/10 "/>
+</bind>
+</comp>
+
+<comp id="69" class="1004" name="grp_fu_69">
+<pin_list>
+<pin id="70" dir="0" index="0" bw="32" slack="1"/>
+<pin id="71" dir="0" index="1" bw="32" slack="0"/>
+<pin id="72" dir="1" index="2" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="fadd(9) " fcode="fadd"/>
+<opset="add1/10 "/>
+</bind>
+</comp>
+
+<comp id="73" class="1004" name="grp_fu_73">
+<pin_list>
+<pin id="74" dir="0" index="0" bw="32" slack="1"/>
+<pin id="75" dir="0" index="1" bw="32" slack="0"/>
+<pin id="76" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="fdiv(16) " fcode="fdiv"/>
+<opset="tan_hyperbolic/10 sigmoid/17 "/>
+</bind>
+</comp>
+
+<comp id="77" class="1005" name="reg_77">
+<pin_list>
+<pin id="78" dir="0" index="0" bw="32" slack="1"/>
+<pin id="79" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="add9 add8 "/>
+</bind>
+</comp>
+
+<comp id="83" class="1004" name="icmp_ln38_fu_83">
+<pin_list>
+<pin id="84" dir="0" index="0" bw="32" slack="0"/>
+<pin id="85" dir="0" index="1" bw="1" slack="0"/>
+<pin id="86" dir="1" index="2" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln38/2 "/>
+</bind>
+</comp>
+
+<comp id="89" class="1004" name="y_loc_load_load_fu_89">
+<pin_list>
+<pin id="90" dir="0" index="0" bw="32" slack="2"/>
+<pin id="91" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="y_loc_load/3 "/>
+</bind>
+</comp>
+
+<comp id="93" class="1004" name="x_2_loc_load_load_fu_93">
+<pin_list>
+<pin id="94" dir="0" index="0" bw="32" slack="9"/>
+<pin id="95" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="x_2_loc_load/10 "/>
+</bind>
+</comp>
+
+<comp id="99" class="1004" name="select_ln38_fu_99">
+<pin_list>
+<pin id="100" dir="0" index="0" bw="1" slack="30"/>
+<pin id="101" dir="0" index="1" bw="32" slack="0"/>
+<pin id="102" dir="0" index="2" bw="32" slack="7"/>
+<pin id="103" dir="1" index="3" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln38/32 "/>
+</bind>
+</comp>
+
+<comp id="105" class="1005" name="angle_read_reg_105">
+<pin_list>
+<pin id="106" dir="0" index="0" bw="32" slack="1"/>
+<pin id="107" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="angle_read "/>
+</bind>
+</comp>
+
+<comp id="110" class="1005" name="y_loc_reg_110">
+<pin_list>
+<pin id="111" dir="0" index="0" bw="32" slack="0"/>
+<pin id="112" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="y_loc "/>
+</bind>
+</comp>
+
+<comp id="116" class="1005" name="x_2_loc_reg_116">
+<pin_list>
+<pin id="117" dir="0" index="0" bw="32" slack="0"/>
+<pin id="118" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="x_2_loc "/>
+</bind>
+</comp>
+
+<comp id="122" class="1005" name="icmp_ln38_reg_122">
+<pin_list>
+<pin id="123" dir="0" index="0" bw="1" slack="1"/>
+<pin id="124" dir="1" index="1" bw="1" slack="30"/>
+</pin_list>
+<bind>
+<opset="icmp_ln38 "/>
+</bind>
+</comp>
+
+<comp id="133" class="1005" name="add1_reg_133">
+<pin_list>
+<pin id="134" dir="0" index="0" bw="32" slack="1"/>
+<pin id="135" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="add1 "/>
+</bind>
+</comp>
+
+<comp id="138" class="1005" name="tan_hyperbolic_reg_138">
+<pin_list>
+<pin id="139" dir="0" index="0" bw="32" slack="7"/>
+<pin id="140" dir="1" index="1" bw="32" slack="7"/>
+</pin_list>
+<bind>
+<opset="tan_hyperbolic "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="37"><net_src comp="8" pin="0"/><net_sink comp="34" pin=0"/></net>
+
+<net id="41"><net_src comp="8" pin="0"/><net_sink comp="38" pin=0"/></net>
+
+<net id="46"><net_src comp="6" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="47"><net_src comp="0" pin="0"/><net_sink comp="42" pin=1"/></net>
+
+<net id="52"><net_src comp="12" pin="0"/><net_sink comp="48" pin=0"/></net>
+
+<net id="53"><net_src comp="2" pin="0"/><net_sink comp="48" pin=1"/></net>
+
+<net id="61"><net_src comp="10" pin="0"/><net_sink comp="54" pin=0"/></net>
+
+<net id="62"><net_src comp="42" pin="2"/><net_sink comp="54" pin=1"/></net>
+
+<net id="63"><net_src comp="4" pin="0"/><net_sink comp="54" pin=4"/></net>
+
+<net id="68"><net_src comp="16" pin="0"/><net_sink comp="64" pin=1"/></net>
+
+<net id="80"><net_src comp="64" pin="2"/><net_sink comp="77" pin=0"/></net>
+
+<net id="81"><net_src comp="77" pin="1"/><net_sink comp="69" pin=0"/></net>
+
+<net id="82"><net_src comp="77" pin="1"/><net_sink comp="73" pin=0"/></net>
+
+<net id="87"><net_src comp="48" pin="2"/><net_sink comp="83" pin=0"/></net>
+
+<net id="88"><net_src comp="14" pin="0"/><net_sink comp="83" pin=1"/></net>
+
+<net id="92"><net_src comp="89" pin="1"/><net_sink comp="64" pin=0"/></net>
+
+<net id="96"><net_src comp="93" pin="1"/><net_sink comp="73" pin=1"/></net>
+
+<net id="97"><net_src comp="93" pin="1"/><net_sink comp="64" pin=1"/></net>
+
+<net id="98"><net_src comp="93" pin="1"/><net_sink comp="69" pin=1"/></net>
+
+<net id="104"><net_src comp="73" pin="2"/><net_sink comp="99" pin=1"/></net>
+
+<net id="108"><net_src comp="42" pin="2"/><net_sink comp="105" pin=0"/></net>
+
+<net id="109"><net_src comp="105" pin="1"/><net_sink comp="54" pin=1"/></net>
+
+<net id="113"><net_src comp="34" pin="1"/><net_sink comp="110" pin=0"/></net>
+
+<net id="114"><net_src comp="110" pin="1"/><net_sink comp="54" pin=3"/></net>
+
+<net id="115"><net_src comp="110" pin="1"/><net_sink comp="89" pin=0"/></net>
+
+<net id="119"><net_src comp="38" pin="1"/><net_sink comp="116" pin=0"/></net>
+
+<net id="120"><net_src comp="116" pin="1"/><net_sink comp="54" pin=2"/></net>
+
+<net id="121"><net_src comp="116" pin="1"/><net_sink comp="93" pin=0"/></net>
+
+<net id="125"><net_src comp="83" pin="2"/><net_sink comp="122" pin=0"/></net>
+
+<net id="126"><net_src comp="122" pin="1"/><net_sink comp="99" pin=0"/></net>
+
+<net id="136"><net_src comp="69" pin="2"/><net_sink comp="133" pin=0"/></net>
+
+<net id="137"><net_src comp="133" pin="1"/><net_sink comp="73" pin=1"/></net>
+
+<net id="141"><net_src comp="73" pin="2"/><net_sink comp="138" pin=0"/></net>
+
+<net id="142"><net_src comp="138" pin="1"/><net_sink comp="99" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+	Port: neuron : angle | {1 }
+	Port: neuron : sel | {2 }
+	Port: neuron : neuron_tanh_in | {1 2 }
+  - Chain level:
+	State 1
+		call_ln0 : 1
+	State 2
+	State 3
+		add9 : 1
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+		tan_hyperbolic : 1
+		add8 : 1
+		add1 : 1
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+		select_ln38 : 1
+		ret_ln42 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------------------------------|---------|---------|---------|---------|
+| Operation|              Functional Unit              |   DSP   |  Delay  |    FF   |   LUT   |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|   call   | grp_neuron_Pipeline_VITIS_LOOP_15_1_fu_54 |    10   | 13.0746 |   1386  |   919   |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|   fadd   |                 grp_fu_64                 |    2    |    0    |   306   |   231   |
+|          |                 grp_fu_69                 |    2    |    0    |   306   |   231   |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|  select  |             select_ln38_fu_99             |    0    |    0    |    0    |    32   |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|   icmp   |              icmp_ln38_fu_83              |    0    |    0    |    0    |    18   |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|   read   |           angle_read_read_fu_42           |    0    |    0    |    0    |    0    |
+|          |            sel_read_read_fu_48            |    0    |    0    |    0    |    0    |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|   fdiv   |                 grp_fu_73                 |    0    |    0    |    0    |    0    |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+|   Total  |                                           |    14   | 13.0746 |   1998  |   1431  |
+|----------|-------------------------------------------|---------|---------|---------|---------|
+
+Memories:
++--------------+--------+--------+--------+
+|              |  BRAM  |   FF   |   LUT  |
++--------------+--------+--------+--------+
+|neuron_tanh_in|    0   |   32   |    7   |
++--------------+--------+--------+--------+
+|     Total    |    0   |   32   |    7   |
++--------------+--------+--------+--------+
+
+* Register list:
++----------------------+--------+
+|                      |   FF   |
++----------------------+--------+
+|     add1_reg_133     |   32   |
+|  angle_read_reg_105  |   32   |
+|   icmp_ln38_reg_122  |    1   |
+|        reg_77        |   32   |
+|tan_hyperbolic_reg_138|   32   |
+|    x_2_loc_reg_116   |   32   |
+|     y_loc_reg_110    |   32   |
++----------------------+--------+
+|         Total        |   193  |
++----------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-------------------------------------------|------|------|------|--------||---------||---------|
+|                    Comp                   |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|-------------------------------------------|------|------|------|--------||---------||---------|
+| grp_neuron_Pipeline_VITIS_LOOP_15_1_fu_54 |  p1  |   2  |  32  |   64   ||    9    |
+|                 grp_fu_64                 |  p1  |   2  |  32  |   64   ||    9    |
+|                 grp_fu_73                 |  p1  |   2  |  32  |   64   ||    9    |
+|-------------------------------------------|------|------|------|--------||---------||---------|
+|                   Total                   |      |      |      |   192  ||   4.83  ||    27   |
+|-------------------------------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+--------+
+|  Function |    -   |   14   |   13   |  1998  |  1431  |
+|   Memory  |    0   |    -   |    -   |   32   |    7   |
+|Multiplexer|    -   |    -   |    4   |    -   |   27   |
+|  Register |    -   |    -   |    -   |   193  |    -   |
++-----------+--------+--------+--------+--------+--------+
+|   Total   |    0   |   14   |   17   |  2223  |  1465  |
++-----------+--------+--------+--------+--------+--------+

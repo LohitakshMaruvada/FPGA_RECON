@@ -1,0 +1,13 @@
+---
+MainSourceFile:  'C:/Users/chait/OneDrive/Desktop/FPGA/Project/tanh/neuron/solution1/.autopilot/db/tanh_sigmoid.pp.0.c'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_15_1:  '
+    FileOffset:      15
+    FilePath:        tanh_sigmoid.c
+    Replacements:    
+      - FilePath:        'C:\Users\chait\OneDrive\Desktop\FPGA\Project\tanh\neuron\solution1\.autopilot\db\tanh_sigmoid.pp.0.c'
+        Offset:          45965
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_15_1: '
+...

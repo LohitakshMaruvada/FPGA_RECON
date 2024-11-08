@@ -1,0 +1,10 @@
+C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC\MAC\solution1\.autopilot\db\MAC.pp.0.c:904:5: warning: Added loop label VITIS_LOOP_26_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < j; i++)
+    ^~~
+    VITIS_LOOP_26_1: 
+C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC\MAC\solution1\.autopilot\db\MAC.pp.0.c:904:5: note: FIX-IT applied suggested code changes
+C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC\MAC\solution1\.autopilot\db\MAC.pp.0.c:934:9: warning: Added loop label VITIS_LOOP_56_2:   [xilinx-label-all-loops]
+        for (int i = 0; i < j; i++)
+        ^~~
+        VITIS_LOOP_56_2: 
+C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC\MAC\solution1\.autopilot\db\MAC.pp.0.c:934:9: note: FIX-IT applied suggested code changes

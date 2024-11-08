@@ -1,0 +1,258 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Nov  7 23:36:05 2024
+# Process ID: 26309
+# Current directory: /home/lohitaksh/FPGA_project/hyperbolic
+# Command line: vivado
+# Log file: /home/lohitaksh/FPGA_project/hyperbolic/vivado.log
+# Journal file: /home/lohitaksh/FPGA_project/hyperbolic/vivado.jou
+# Running On: GU603VV, OS: Linux, CPU Frequency: 1040.892 MHz, CPU Physical cores: 10, Host memory: 16403 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.xpr
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+launch_simulation
+source blk_tb.tcl
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+launch_runs synth_1 -jobs 14
+wait_on_run synth_1
+launch_runs impl_1 -jobs 14
+wait_on_run impl_1
+close_sim
+open_run impl_1
+report_utilization -name utilization_1
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+make_wrapper -files [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_project
+launch_runs impl_1 -jobs 14
+wait_on_run impl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+refresh_design
+launch_simulation -mode post-implementation -type functional
+source blk_tb.tcl
+launch_simulation
+source blk_tb.tcl
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+report_ip_status -name ip_status 
+disconnect_bd_net /xlconstant_1_dout [get_bd_pins div_0/ap_start]
+startgroup
+connect_bd_net [get_bd_pins cordic_0/m_axis_dout_tvalid] [get_bd_pins div_0/ap_start]
+endgroup
+close_sim
+save_bd_design
+generate_target Simulation [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/sim_scripts -ip_user_files_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files -ipstatic_source_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/modelsim} {questa=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/questa} {xcelium=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/xcelium} {vcs=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/vcs} {riviera=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source blk_tb.tcl
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets cordic_0_m_axis_dout_tvalid]
+connect_bd_net [get_bd_pins div_0/ap_start] [get_bd_pins xlconstant_1/dout]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:util_ds_buf:2.2 util_ds_buf_0
+endgroup
+delete_bd_objs [get_bd_cells util_ds_buf_0]
+disconnect_bd_net /xlconstant_1_dout [get_bd_pins c_addsub_0/CE]
+connect_bd_net [get_bd_pins cordic_0/m_axis_dout_tvalid] [get_bd_pins c_addsub_0/CE]
+startgroup
+set_property CONFIG.Latency_Configuration {Automatic} [get_bd_cells c_addsub_0]
+endgroup
+save_bd_design
+close_sim
+generate_target Simulation [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/sim_scripts -ip_user_files_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files -ipstatic_source_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/modelsim} {questa=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/questa} {xcelium=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/xcelium} {vcs=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/vcs} {riviera=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source blk_tb.tcl
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets cordic_0_m_axis_dout_tvalid]
+connect_bd_net [get_bd_pins c_addsub_0/CE] [get_bd_pins xlconstant_1/dout]
+save_bd_design
+report_ip_status -name ip_status 
+create_bd_design "design_2"
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference design_1_wrapper design_1_wrapper_0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0
+endgroup
+set_property -dict [list \
+  CONFIG.C_NUM_PROBE_IN {2} \
+  CONFIG.C_NUM_PROBE_OUT {4} \
+  CONFIG.C_PROBE_IN0_WIDTH {32} \
+  CONFIG.C_PROBE_OUT0_WIDTH {9} \
+  CONFIG.C_PROBE_OUT1_WIDTH {9} \
+  CONFIG.C_PROBE_OUT2_WIDTH {16} \
+] [get_bd_cells vio_0]
+create_bd_port -dir I clk
+connect_bd_net [get_bd_ports clk] [get_bd_pins vio_0/clk]
+connect_bd_net [get_bd_ports clk] [get_bd_pins design_1_wrapper_0/clk]
+connect_bd_net [get_bd_pins design_1_wrapper_0/ap_done] [get_bd_pins vio_0/probe_in1]
+connect_bd_net [get_bd_pins design_1_wrapper_0/tanh] [get_bd_pins vio_0/probe_in0]
+connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins design_1_wrapper_0/a]
+connect_bd_net [get_bd_pins vio_0/probe_out1] [get_bd_pins design_1_wrapper_0/b]
+connect_bd_net [get_bd_pins vio_0/probe_out2] [get_bd_pins design_1_wrapper_0/c]
+connect_bd_net [get_bd_pins vio_0/probe_out3] [get_bd_pins design_1_wrapper_0/sel]
+regenerate_bd_layout -routing
+regenerate_bd_layout
+save_bd_design
+make_wrapper -files [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd] -top
+add_files -norecurse /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_2/hdl/design_2_wrapper.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top design_2_wrapper [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs cordic_0_synth_1]
+set_property needs_refresh false [get_runs design_1_xbip_multadd_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_c_addsub_1_0_synth_1]
+set_property needs_refresh false [get_runs design_1_TwoOneMux_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_TwoOneMux_0_1_synth_1]
+set_property needs_refresh false [get_runs design_1_splitter_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_div_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_BitShift_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_BitShift_1_0_synth_1]
+set_property needs_refresh false [get_runs design_1_cordic_0_0_synth_1]
+set_property needs_refresh false [get_runs design_1_c_addsub_0_0_synth_1]
+reset_projecct
+reset_project
+reset_run design_1_xbip_multadd_0_0_synth_1
+launch_runs design_1_xbip_multadd_0_0_synth_1
+wait_on_run design_1_xbip_multadd_0_0_synth_1
+reset_run design_1_c_addsub_1_0_synth_1
+launch_runs design_1_c_addsub_1_0_synth_1
+wait_on_run design_1_c_addsub_1_0_synth_1
+reset_run design_1_TwoOneMux_0_0_synth_1
+launch_runs design_1_TwoOneMux_0_0_synth_1
+wait_on_run design_1_TwoOneMux_0_0_synth_1
+reset_run design_1_TwoOneMux_0_1_synth_1
+launch_runs design_1_TwoOneMux_0_1_synth_1
+wait_on_run design_1_TwoOneMux_0_1_synth_1
+reset_run design_1_splitter_0_0_synth_1
+launch_runs design_1_splitter_0_0_synth_1
+wait_on_run design_1_splitter_0_0_synth_1
+reset_run design_1_div_0_0_synth_1
+launch_runs design_1_div_0_0_synth_1
+wait_on_run design_1_div_0_0_synth_1
+reset_run design_1_BitShift_0_0_synth_1
+launch_runs design_1_BitShift_0_0_synth_1
+wait_on_run design_1_BitShift_0_0_synth_1
+reset_run design_1_BitShift_1_0_synth_1
+launch_runs design_1_BitShift_1_0_synth_1
+wait_on_run design_1_BitShift_1_0_synth_1
+reset_run design_1_cordic_0_0_synth_1
+launch_runs design_1_cordic_0_0_synth_1
+wait_on_run design_1_cordic_0_0_synth_1
+reset_run design_1_c_addsub_0_0_synth_1
+launch_runs design_1_c_addsub_0_0_synth_1
+wait_on_run design_1_c_addsub_0_0_synth_1
+generate_target all [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd]
+launch_runs design_2_design_1_wrapper_0_0_synth_1
+wait_on_run design_2_design_1_wrapper_0_0_synth_1
+launch_runs design_2_vio_0_0_synth_1
+wait_on_run design_2_vio_0_0_synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+connect_bd_net [get_bd_pins div_0/ap_rst] [get_bd_pins xlconstant_0/dout]
+update_module_reference design_2_design_1_wrapper_0_0
+current_bd_design [get_bd_designs design_1]
+save_bd_design
+generate_target all [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd]
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd]
+launch_runs design_2_design_1_wrapper_0_0_synth_1
+wait_on_run design_2_design_1_wrapper_0_0_synth_1
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+place_ports clk W5
+file mkdir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/constrs_1/new
+close [ open /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/constrs_1/new/constraints.xdc w ]
+add_files -fileset constrs_1 /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/constrs_1/new/constraints.xdc
+set_property target_constrs_file /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/constrs_1/new/constraints.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/design_2_wrapper.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/design_2_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/design_2_wrapper.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/design_2_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/design_2_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/design_2_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_2/design_2.bd}
+update_module_reference design_2_design_1_wrapper_0_0
+export_ip_user_files -of_objects  [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+file delete -force /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_module_reference design_2_design_1_wrapper_0_0
+make_wrapper -files [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+update_compile_order -fileset sources_1
+update_module_reference design_2_design_1_wrapper_0_0
+set_property OUTPUT_VALUE_RADIX SIGNED [get_hw_probes design_2_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property NAME.CUSTOM tanh [get_hw_probes design_2_i/design_1_wrapper_0_tanh -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.SELECT custom [get_hw_probes design_2_i/design_1_wrapper_0_tanh -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.CUSTOM select [get_hw_probes design_2_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.SELECT custom [get_hw_probes design_2_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.CUSTOM c [get_hw_probes design_2_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.SELECT custom [get_hw_probes design_2_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.CUSTOM a [get_hw_probes design_2_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.SELECT custom [get_hw_probes design_2_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.CUSTOM b [get_hw_probes design_2_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.SELECT custom [get_hw_probes design_2_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.CUSTOM done [get_hw_probes design_2_i/design_1_wrapper_0_ap_done -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property NAME.SELECT custom [get_hw_probes design_2_i/design_1_wrapper_0_ap_done -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]] 
+set_property OUTPUT_VALUE 1 [get_hw_probes design_2_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_2_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX SIGNED [get_hw_probes design_2_i/design_1_wrapper_0_tanh -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX HEX [get_hw_probes design_2_i/design_1_wrapper_0_tanh -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX SIGNED [get_hw_probes design_2_i/design_1_wrapper_0_tanh -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes design_2_i/design_1_wrapper_0_tanh -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX HEX [get_hw_probes design_2_i/design_1_wrapper_0_tanh -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property PROBES.FILE {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/design_2_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/design_2_wrapper.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.runs/impl_1/design_2_wrapper.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property OUTPUT_VALUE 1000 [get_hw_probes design_2_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_2_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+add_force {/blk_tb/c} -radix hex {1 0ns}
+run 1 us
+set_property OUTPUT_VALUE 0 [get_hw_probes design_2_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_2_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_2_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_2_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes design_2_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_2_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_2_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_2_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes design_2_i/vio_0_probe_out3 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_2_i/vio_0_probe_out3} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"design_2_i/vio_0"}]]
+add_force {/blk_tb/tanh} -radix hex {3EEC9643 0ns}
+run 1 us
+add_force {/blk_tb/c} -radix hex {1000 0ns}
+run 1 us
+close_sim
+close_sim

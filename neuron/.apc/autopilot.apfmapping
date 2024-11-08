@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="tanh_sigmoid.c" path="C:\Users\chait\OneDrive\Desktop\FPGA\Project\tanh\tanh_sigmoid.c"/>
+  </source>
+  <testbench>
+    <originFiles name="tanh_sigmoid_test.c" path="C:\Users\chait\OneDrive\Desktop\FPGA\Project\tanh\tanh_sigmoid_test.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

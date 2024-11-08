@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sitofp" ID="" IMPL="auto" LATENCY="5" OPTYPE="sitofp" PRAGMA="" RTLNAME="sitofp_32ns_32_6_no_dsp_1_U2" SOURCE="div.cpp:4" VARIABLE="af" MODULE="div" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op sitofp" ID="" IMPL="auto" LATENCY="5" OPTYPE="sitofp" PRAGMA="" RTLNAME="sitofp_32ns_32_6_no_dsp_1_U3" SOURCE="div.cpp:5" VARIABLE="bf" MODULE="div" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op fdiv" ID="" IMPL="fabric" LATENCY="15" OPTYPE="fdiv" PRAGMA="" RTLNAME="fdiv_32ns_32ns_32_16_no_dsp_1_U1" SOURCE="div.cpp:7" VARIABLE="div_1" MODULE="div" LOOP="" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

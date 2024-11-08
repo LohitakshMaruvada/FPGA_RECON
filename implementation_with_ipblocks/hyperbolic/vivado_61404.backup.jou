@@ -1,0 +1,127 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Nov  3 22:47:41 2024
+# Process ID: 61404
+# Current directory: /home/lohitaksh/FPGA_project/hyperbolic
+# Command line: vivado
+# Log file: /home/lohitaksh/FPGA_project/hyperbolic/vivado.log
+# Journal file: /home/lohitaksh/FPGA_project/hyperbolic/vivado.jou
+# Running On: GU603VV, OS: Linux, CPU Frequency: 545.205 MHz, CPU Physical cores: 10, Host memory: 16403 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.xpr
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference splitter splitter_1
+connect_bd_net [get_bd_pins splitter_1/mix] [get_bd_pins div_gen_1/m_axis_dout_tdata]
+delete_bd_objs [get_bd_nets div_gen_1_m_axis_dout_tdata]
+connect_bd_net [get_bd_pins div_gen_1/m_axis_dout_tdata] [get_bd_pins splitter_1/mix]
+connect_bd_net [get_bd_ports tanh] [get_bd_pins splitter_1/sinh]
+save_bd_design
+generate_target Simulation [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/sim_scripts -ip_user_files_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files -ipstatic_source_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/modelsim} {questa=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/questa} {xcelium=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/xcelium} {vcs=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/vcs} {riviera=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+startgroup
+set_property -dict [list \
+  CONFIG.latency {36} \
+  CONFIG.operand_sign {Signed} \
+] [get_bd_cells div_gen_1]
+endgroup
+save_bd_design
+generate_target Simulation [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/sim_scripts -ip_user_files_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files -ipstatic_source_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/modelsim} {questa=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/questa} {xcelium=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/xcelium} {vcs=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/vcs} {riviera=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source blk_tb.tcl
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+close_sim
+launch_simulation
+source blk_tb.tcl
+run 1 us
+run 1 us
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets splitter_1_sinh]
+connect_bd_net [get_bd_ports tanh] [get_bd_pins splitter_1/cosh]
+save_bd_design
+close_sim
+generate_target Simulation [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/sim_scripts -ip_user_files_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files -ipstatic_source_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/modelsim} {questa=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/questa} {xcelium=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/xcelium} {vcs=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/vcs} {riviera=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source blk_tb.tcl
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property CONFIG.divide_by_zero_detect {false} [get_bd_cells div_gen_1]
+endgroup
+run 1 us
+open_bd_design {/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd}
+delete_bd_objs [get_bd_nets div_gen_1_m_axis_dout_tdata] [get_bd_nets splitter_1_cosh] [get_bd_cells splitter_1]
+delete_bd_objs [get_bd_ports tanh]
+startgroup
+make_bd_pins_external  [get_bd_pins div_gen_1/m_axis_dout_tdata]
+endgroup
+set_property name tanh [get_bd_ports m_axis_dout_tdata_0]
+save_bd_design
+close_sim
+generate_target Simulation [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/sim_scripts -ip_user_files_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files -ipstatic_source_dir /home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/modelsim} {questa=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/questa} {xcelium=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/xcelium} {vcs=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/vcs} {riviera=/home/lohitaksh/FPGA_project/hyperbolic/hyperbolic.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+source blk_tb.tcl
+run 1 us
+run 1 us
+run 1 us
+add_force {/blk_tb/sinh} -radix dec {86 0ns}
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+close_sim

@@ -1,0 +1,233 @@
+#-----------------------------------------------------------
+# xsim v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Oct 30 15:14:43 2024
+# Process ID: 23252
+# Current directory: C:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/MAC/xsim_script.tcl}
+# Log file: C:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution1/sim/verilog\xsim.jou
+# Running On: LAPTOP-HO0MVFJA, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 8241 MB
+#-----------------------------------------------------------
+source xsim.dir/MAC/xsim_script.tcl
+# xsim {MAC} -autoloadwcfg -tclbatch {MAC.tcl}
+Time resolution is 1 ps
+source MAC.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 5 [n/a] @ "125000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 255 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 295 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 385 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 425 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 515 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 555 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 685 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 775 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 815 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 985 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1015 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1135 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1165 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1285 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1315 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1435 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1465 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1585 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1615 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 5 [n/a] @ "1815000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1935 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1975 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2065 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2105 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2195 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2235 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2325 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2365 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2455 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2495 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2665 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2695 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2815 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2845 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2965 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2995 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3115 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3145 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3265 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3295 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 2 / 5 [n/a] @ "3495000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3615 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3655 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3745 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3785 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3875 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3915 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4005 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4045 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4135 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4175 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4345 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4375 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4525 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4645 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4675 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4795 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4825 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4945 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4975 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 3 / 5 [n/a] @ "5175000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5295 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5335 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5425 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5465 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5555 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5595 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5685 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5725 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5815 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5855 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6025 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6055 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6175 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6205 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6325 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6355 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6475 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6505 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6625 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6655 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 4 / 5 [n/a] @ "6855000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6975 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7015 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7105 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7145 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7235 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7275 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7365 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7405 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7495 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7535 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7705 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7735 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7855 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7885 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8005 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8035 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8155 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8185 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8305 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8335 ns  Iteration: 8  Process: /apatb_MAC_top/AESL_inst_MAC/faddfsub_32ns_32ns_32_7_full_dsp_1_U25/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 5 / 5 [n/a] @ "8535000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 8595 ns : File "C:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution1/sim/verilog/MAC.autotb.v" Line 440
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Oct 30 15:14:46 2024...

@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../tanh_sigmoid_test.c in debug mode
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'chait' on host 'laptop-ho0mvfja' (Windows NT_amd64 version 6.2) on Fri Nov 08 02:32:12 +0530 2024
+INFO: [HLS 200-10] In directory 'C:/Users/chait/OneDrive/Desktop/FPGA/Project/tanh/neuron/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 0 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.535 seconds; peak allocated memory: 8.121 MB.
+   Generating csim.exe
+  0.100000  0.531801  
+  0.300000  0.593557  
+  0.600000  0.654347  
+  0.500000  0.637926  
+  1.000000  0.745963  
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

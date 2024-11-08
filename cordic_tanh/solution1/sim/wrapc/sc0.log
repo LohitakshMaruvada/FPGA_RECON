@@ -1,0 +1,22 @@
+   Build using "C:/Xilinx/Vitis_HLS/2022.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_tanh_custom.cpp
+   Compiling (apcc) tanh.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'chait' on host 'laptop-ho0mvfja' (Windows NT_amd64 version 6.2) on Mon Nov 04 00:27:01 +0530 2024
+INFO: [HLS 200-10] In directory 'C:/Users/chait/OneDrive/Desktop/FPGA/Project/tanh/cordic_tanh/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.591 seconds; peak allocated memory: 7.887 MB.
+   Compiling (apcc) tanh_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2022.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'chait' on host 'laptop-ho0mvfja' (Windows NT_amd64 version 6.2) on Mon Nov 04 00:27:07 +0530 2024
+INFO: [HLS 200-10] In directory 'C:/Users/chait/OneDrive/Desktop/FPGA/Project/tanh/cordic_tanh/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 0 seconds. Total elapsed time: 1.338 seconds; peak allocated memory: 7.996 MB.
+   Compiling apatb_tanh_custom_ir.ll
+   Generating cosim.tv.exe

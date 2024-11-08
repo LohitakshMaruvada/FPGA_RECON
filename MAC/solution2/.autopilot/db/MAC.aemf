@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1730258288650">
+  <ports id="1" name="a" type="PortType" originalName="a" coreId="1953394531" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="b" type="PortType" originalName="b" coreId="1953394531" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="c" type="PortType" originalName="c" coreId="1953394531" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="j" type="PortType" originalName="j" coreId="1953394531" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="14" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="71" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="74" source_obj="//@ports.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="76" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="78" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="81" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="84" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="85" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="86" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="87" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="88" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="89" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="93" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="98" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="100" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="101" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="102" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="123" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="125" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="129" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="130" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="131" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="133" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="135" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="142" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="145" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="147" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="148" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="149" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="150" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="151" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="152" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="261" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="262" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="263" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="264" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="265" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="266" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="267" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="268" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="269" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="270" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="271" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="272" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="273" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="274" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="275" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="276" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="277" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="2147483647" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="2147483647" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9" is_back_edge="1"/>
+  <edges source_obj="//@blocks.1/@node_objs.1" sink_obj="//@ports.4"/>
+  <blocks id="28" name="entry" type="BlockType">
+    <controlOutputObjs>for.body</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="y" originalName="y" coreId="2151854832" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="z" originalName="z" coreId="1819176804" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="pow" originalName="pow" coreId="1819631974" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="i" coreId="745303137" bitwidth="31" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="j_read" lineNumber="7" originalName="j" fileName="MAC.c" fileDirectory=".." coreId="544433516" contextFuncName="MAC" bitwidth="32" opcode="read" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="7" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <dataInputObjs>j</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="c_read" lineNumber="7" originalName="c" fileName="MAC.c" fileDirectory=".." coreId="0" contextFuncName="MAC" bitwidth="32" opcode="read" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="7" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <dataInputObjs>c</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="b_read" lineNumber="7" originalName="b" fileName="MAC.c" fileDirectory=".." coreId="0" contextFuncName="MAC" bitwidth="32" opcode="read" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="7" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <dataInputObjs>b</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="a_read" lineNumber="7" originalName="a" fileName="MAC.c" fileDirectory=".." coreId="538976288" contextFuncName="MAC" bitwidth="32" opcode="read" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="7" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <dataInputObjs>a</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="i_write_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="4106082296" contextFuncName="MAC" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="pow_write_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="1819631974" contextFuncName="MAC" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="z_write_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="1702260512" contextFuncName="MAC" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="y_write_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="2149199952" contextFuncName="MAC" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="br_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="0" contextFuncName="MAC" opcode="br" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <controlInputObjs>for.body</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MAC.c">
+      <validLinenumbers>7</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="63" name="for.end.loopexit" type="BlockType">
+    <controlInputObjs>for.body</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="y_load_1" lineNumber="47" fileName="MAC.c" fileDirectory=".." coreId="4294967295" contextFuncName="MAC" bitwidth="32" opcode="load" nodeLabel="4.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="47" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>ret</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="_ln47" lineNumber="47" fileName="MAC.c" fileDirectory=".." coreId="2643056798" contextFuncName="MAC" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="MAC.c" linenumber="47" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="MAC.c">
+      <validLinenumbers>47</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="13" typeName="Pipeline" iiViolation="Memory Dependency;mFailedII=12;mDependenceDistancedII=1;mLimitedResource=0;nodes=53__,46__;" id="273" pipe_depth="18" RegionName="VITIS_LOOP_26_1">
+    <basic_blocks id="35" name="for.body" type="BlockType">
+      <controlInputObjs>entry</controlInputObjs>
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.body.split</controlOutputObjs>
+      <controlOutputObjs>for.end.loopexit</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="i_load" coreId="0" bitwidth="31" opcode="load" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="i_cast" rtlName="i_cast_fu_151_p1" coreId="6750318" bitwidth="32" opcode="zext" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="icmp_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." rtlName="icmp_ln26_fu_155_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="MAC" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.43" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="i_1" rtlName="i_1_fu_161_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" bitwidth="31" opcode="add" m_display="0" m_delay="2.66" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="0" contextFuncName="MAC" opcode="br" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.end.loopexit</controlInputObjs>
+        <controlInputObjs>for.body.split</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="MAC.c">
+        <validLinenumbers>26</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="60" name="for.body.split" type="BlockType">
+      <controlInputObjs>for.body</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.body</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="y_load" lineNumber="37" fileName="MAC.c" fileDirectory=".." coreId="6775040" contextFuncName="MAC" bitwidth="32" opcode="load" nodeLabel="10.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="37" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>fadd</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="z_load" lineNumber="38" fileName="MAC.c" fileDirectory=".." coreId="2149206352" contextFuncName="MAC" bitwidth="32" opcode="load" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="38" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+        <dataOutputObjs>fcmp</dataOutputObjs>
+        <dataOutputObjs>fsub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="pow_load" lineNumber="40" fileName="MAC.c" fileDirectory=".." coreId="1599294464" contextFuncName="MAC" bitwidth="32" opcode="load" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="40" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="bitcast_ln28" lineNumber="28" fileName="MAC.c" fileDirectory=".." rtlName="bitcast_ln28_fu_180_p1" coreId="0" contextFuncName="MAC" bitwidth="32" opcode="bitcast" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="28" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="tmp" lineNumber="28" fileName="MAC.c" fileDirectory=".." rtlName="tmp_fu_183_p4" coreId="0" contextFuncName="MAC" bitwidth="8" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="28" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="trunc_ln28" lineNumber="28" fileName="MAC.c" fileDirectory=".." rtlName="trunc_ln28_fu_193_p1" coreId="3276850" contextFuncName="MAC" bitwidth="23" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="28" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="icmp_ln28" lineNumber="28" fileName="MAC.c" fileDirectory=".." rtlName="icmp_ln28_fu_197_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="MAC" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.47" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="28" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="icmp_ln28_1" lineNumber="28" fileName="MAC.c" fileDirectory=".." rtlName="icmp_ln28_1_fu_203_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="MAC" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.4" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="28" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>or</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="or_ln28" lineNumber="28" fileName="MAC.c" fileDirectory=".." rtlName="or_ln28_fu_209_p2" coreName="LogicGate" implIndex="auto" control="no" opType="or" coreId="74" contextFuncName="MAC" bitwidth="1" opcode="or" nodeLabel="1.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="MAC.c" linenumber="28" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="tmp_1" lineNumber="28" fileName="MAC.c" fileDirectory=".." rtlName="fcmp_32ns_32ns_1_2_no_dsp_1_U4" coreName="FCompare" implIndex="auto" control="no" opType="fcmp" coreId="19" contextFuncName="MAC" bitwidth="1" opcode="fcmp" nodeLatency="1" m_display="1" m_delay="5.09" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="28" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>fsub</dataInputObjs>
+        <dataOutputObjs>and</dataOutputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="and_ln28" lineNumber="28" fileName="MAC.c" fileDirectory=".." rtlName="and_ln28_fu_215_p2" coreName="LogicGate" implIndex="auto" control="no" opType="and" coreId="74" contextFuncName="MAC" bitwidth="1" opcode="and" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="MAC.c" linenumber="28" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>fcmp</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="select_ln37" lineNumber="37" fileName="MAC.c" fileDirectory=".." rtlName="select_ln37_fu_221_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="MAC" bitwidth="32" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.97" m_topoIndex="31" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="MAC.c" linenumber="37" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>and</dataInputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="mul" lineNumber="37" fileName="MAC.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U2" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="MAC" bitwidth="32" opcode="fmul" nodeLabel="2.0" nodeLatency="3" m_display="0" m_delay="5.78" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="37" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>fmul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="mul2" lineNumber="37" fileName="MAC.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U2" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="MAC" bitwidth="32" opcode="fmul" nodeLabel="6.0" nodeLatency="3" m_display="0" m_delay="5.78" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="37" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>fmul</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>fadd</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="51" name="y_1" lineNumber="37" originalName="y" fileName="MAC.c" fileDirectory=".." rtlName="faddfsub_32ns_32ns_32_7_full_dsp_1_U1" coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fsub" coreId="18" contextFuncName="MAC" bitwidth="32" opcode="fadd" nodeLabel="10.0" nodeLatency="6" m_display="0" m_delay="5.92" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="37" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>fmul</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="mul4" lineNumber="38" fileName="MAC.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U3" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="MAC" bitwidth="32" opcode="fmul" nodeLabel="2.0" nodeLatency="3" m_display="1" m_delay="5.78" m_isLCDNode="true" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="38" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>fcmp</dataInputObjs>
+        <dataOutputObjs>fsub</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="z_1" lineNumber="38" originalName="z" fileName="MAC.c" fileDirectory=".." rtlName="faddfsub_32ns_32ns_32_7_full_dsp_1_U1" coreName="FAddSub_fulldsp" implIndex="fulldsp" control="no" opType="fsub" coreId="18" contextFuncName="MAC" bitwidth="32" opcode="fsub" nodeLabel="6.0" nodeLatency="6" m_display="1" m_delay="5.92" m_isLCDNode="true" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="38" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>fmul</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <dataOutputObjs>fcmp</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="pow_1" lineNumber="40" originalName="pow" fileName="MAC.c" fileDirectory=".." rtlName="fmul_32ns_32ns_32_4_max_dsp_1_U2" coreName="FMul_maxdsp" implIndex="maxdsp" control="no" opType="fmul" coreId="30" contextFuncName="MAC" bitwidth="32" opcode="fmul" nodeLatency="3" m_display="0" m_delay="5.78" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="40" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="i_write_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="2154743520" contextFuncName="MAC" opcode="store" m_display="0" m_delay="1.61" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="pow_write_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="5177436" contextFuncName="MAC" opcode="store" nodeLabel="4.0" m_display="0" m_delay="1.61" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>fmul</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="57" name="z_write_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="3014706" contextFuncName="MAC" opcode="store" nodeLabel="13.0" m_display="0" m_delay="1.61" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>fsub</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="y_write_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="0" contextFuncName="MAC" opcode="store" nodeLabel="17.0" m_display="0" m_delay="1.61" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <dataInputObjs>fadd</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="br_ln26" lineNumber="26" fileName="MAC.c" fileDirectory=".." coreId="2152942352" contextFuncName="MAC" opcode="br" nodeLabel="17.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="MAC.c" linenumber="26" fileDirectory="C:\Users\chait\OneDrive\Desktop\FPGA\Project\MAC" functionName="MAC"/>
+        <controlInputObjs>for.body</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="MAC.c">
+        <validLinenumbers>37</validLinenumbers>
+        <validLinenumbers>38</validLinenumbers>
+        <validLinenumbers>40</validLinenumbers>
+        <validLinenumbers>28</validLinenumbers>
+        <validLinenumbers>26</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <regnodes realName="icmp_ln26_reg_285">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="a_read_reg_280">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="y_reg_251">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <regnodes realName="z_reg_259">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="pow_load_reg_296">
+    <nodeIds>38</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln37_reg_303">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="mul4_reg_309">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_273">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="z_load_reg_289">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_118">
+    <nodeIds>54</nodeIds>
+    <nodeIds>49</nodeIds>
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <regnodes realName="pow_reg_266">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="y_load_reg_314">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_124">
+    <nodeIds>53</nodeIds>
+    <nodeIds>51</nodeIds>
+  </regnodes>
+  <expressionNodes realName="z_fu_64">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln28_fu_193">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="pow_fu_68">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln26_fu_155">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_fu_60">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln37_fu_221">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_fu_72">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_183">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln28_fu_209">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln28_fu_197">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_cast_fu_151">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln28_1_fu_203">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln28_fu_180">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_1_fu_161">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln28_fu_215">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_109">
+    <nodeIds>52</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_113">
+    <nodeIds>46</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_104">
+    <nodeIds>54</nodeIds>
+    <nodeIds>49</nodeIds>
+    <nodeIds>50</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_100">
+    <nodeIds>53</nodeIds>
+    <nodeIds>51</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="j_read_read_fu_76">
+    <nodeIds>19</nodeIds>
+  </ioNodes>
+  <ioNodes realName="pow_load_load_fu_171">
+    <nodeIds>38</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln26_store_fu_229">
+    <nodeIds>56</nodeIds>
+  </ioNodes>
+  <ioNodes realName="y_load_load_fu_234">
+    <nodeIds>36</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln26_store_fu_128">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln26_store_fu_238">
+    <nodeIds>57</nodeIds>
+  </ioNodes>
+  <ioNodes realName="a_read_read_fu_94">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln26_store_fu_133">
+    <nodeIds>24</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln26_store_fu_243">
+    <nodeIds>58</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln26_store_fu_175">
+    <nodeIds>55</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln26_store_fu_143">
+    <nodeIds>26</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln26_store_fu_138">
+    <nodeIds>25</nodeIds>
+  </ioNodes>
+  <ioNodes realName="z_load_load_fu_167">
+    <nodeIds>37</nodeIds>
+  </ioNodes>
+  <ioNodes realName="c_read_read_fu_82">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="y_load_1_load_fu_248">
+    <nodeIds>61</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_load_load_fu_148">
+    <nodeIds>29</nodeIds>
+  </ioNodes>
+  <ioNodes realName="b_read_read_fu_88">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioPorts name="a">
+    <contents name="read">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="b">
+    <contents name="read">
+      <nodeIds>21</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="c">
+    <contents name="read">
+      <nodeIds>20</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="j">
+    <contents name="read">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>62</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="46" stage="2" latency="2"/>
+      <operations id="54" stage="4" latency="4"/>
+      <operations id="55" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="2"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="54" stage="3" latency="4"/>
+    </states>
+    <states id="3">
+      <operations id="49" stage="4" latency="4"/>
+      <operations id="52" stage="4" latency="4"/>
+      <operations id="54" stage="2" latency="4"/>
+    </states>
+    <states id="4">
+      <operations id="49" stage="3" latency="4"/>
+      <operations id="52" stage="3" latency="4"/>
+      <operations id="54" stage="1" latency="4"/>
+    </states>
+    <states id="5">
+      <operations id="49" stage="2" latency="4"/>
+      <operations id="52" stage="2" latency="4"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="49" stage="1" latency="4"/>
+      <operations id="52" stage="1" latency="4"/>
+    </states>
+    <states id="7">
+      <operations id="50" stage="4" latency="4"/>
+      <operations id="53" stage="7" latency="7"/>
+    </states>
+    <states id="8">
+      <operations id="50" stage="3" latency="4"/>
+      <operations id="53" stage="6" latency="7"/>
+    </states>
+    <states id="9">
+      <operations id="50" stage="2" latency="4"/>
+      <operations id="53" stage="5" latency="7"/>
+    </states>
+    <states id="10">
+      <operations id="50" stage="1" latency="4"/>
+      <operations id="53" stage="4" latency="7"/>
+    </states>
+    <states id="11">
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="51" stage="7" latency="7"/>
+      <operations id="53" stage="3" latency="7"/>
+    </states>
+    <states id="12">
+      <operations id="51" stage="6" latency="7"/>
+      <operations id="53" stage="2" latency="7"/>
+    </states>
+    <states id="13">
+      <operations id="51" stage="5" latency="7"/>
+      <operations id="53" stage="1" latency="7"/>
+    </states>
+    <states id="14">
+      <operations id="51" stage="4" latency="7"/>
+      <operations id="57" stage="1" latency="1"/>
+    </states>
+    <states id="15">
+      <operations id="51" stage="3" latency="7"/>
+    </states>
+    <states id="16">
+      <operations id="51" stage="2" latency="7"/>
+    </states>
+    <states id="17">
+      <operations id="51" stage="1" latency="7"/>
+    </states>
+    <states id="18">
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+    </states>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="MAC" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>28</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_26_1" mII="13" mDepth="18" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>60</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>63</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

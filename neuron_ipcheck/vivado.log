@@ -1,0 +1,659 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Nov  8 17:35:08 2024
+# Process ID: 2676
+# Current directory: C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25620 C:\Users\chait\OneDrive\Desktop\submission\neuron_ipcheck\neuron_ipcheck.xpr
+# Log file: C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/vivado.log
+# Journal file: C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck\vivado.jou
+# Running On: LAPTOP-HO0MVFJA, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 8241 MB
+#-----------------------------------------------------------
+start_gui
+oopen_project C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.xprINFO: [Project 1-313] Project file moved from 'C:/Users/chait/OneDrive/Desktop/FPGA/Project/tanh/neuron_ipcheck' since last save.
+INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/AppData/Roaming/Xilinx/Vivado/2022.2/xhub/board_store/xilinx_board_store'; using path 'C:/Users/chait/AppData/Roaming/Xilinx/Vivado/2022.2/xhub/board_store/xilinx_board_store' instead.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/chait/OneDrive/Desktop/submission/neuron/solution1/impl/ip', nor could it be found using path 'C:/Users/chait/OneDrive/Desktop/FPGA/Project/tanh/neuron/solution1/impl/ip'.
+INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/chait/OneDrive/Desktop/MAC/MAC/solution2/impl/ip'; using path 'C:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution2/impl/ip' instead.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/chait/OneDrive/Desktop/submission/neuron/solution1/impl/ip'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/chait/OneDrive/Desktop/FPGA/Project/MAC/MAC/solution2/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'neuron_0' is locked:
+* IP definition 'neuron (1.0)' for IP 'neuron_0' (customized with software release 2022.2) was not found in the IP Catalog.
+WWARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.0/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/sp701/1.1/board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not availableopen_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:35 . Memory (MB): peak = 1133.676 ; gain = 373.727
+update_compile_order -fileset sources_1
+lexit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  8 17:36:49 2024...
+lation top is 'testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-12490] The selected simulation model for 'neuron_0' IP changed to '' from 'rtl', the simulation run directory will be deleted.
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-20] The project contains locked or custom IPs. The pre-compiled version of these IPs will not be referenced and the sources from these IP libraries will be compiled locally.
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.sim/sim_1/behav/xsim/neuron_neuron_Pipeline_VITIS_LOOP_15_1_neuron_tanh_in_ROM_AUTO_1R.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/floating_point_v7_1_rfs.v" into library floating_point_v7_1_15
+INFO: [VRFC 10-311] analyzing module dummy_verilog_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_fadd_32ns_32ns_32_7_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fadd_32ns_32ns_32_7_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_faddfsub_32ns_32ns_32_7_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_faddfsub_32ns_32ns_32_7_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_fcmp_32ns_32ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_fdiv_32ns_32ns_32_16_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fdiv_32ns_32ns_32_16_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_fmul_32ns_32ns_32_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fmul_32ns_32ns_32_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_neuron_Pipeline_VITIS_LOOP_15_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_neuron_Pipeline_VITIS_LOOP_15_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron_neuron_Pipeline_VITIS_LOOP_15_1_neuron_tanh_in_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_neuron_Pipeline_VITIS_LOOP_15_1_neuron_tanh_in_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/neuron.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/neuron_faddfsub_32ns_32ns_32_7_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_faddfsub_32ns_32ns_32_7_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/neuron_fadd_32ns_32ns_32_7_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fadd_32ns_32ns_32_7_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/neuron_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fcmp_32ns_32ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/neuron_fdiv_32ns_32ns_32_16_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fdiv_32ns_32ns_32_16_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/neuron_fmul_32ns_32ns_32_4_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_fmul_32ns_32ns_32_4_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.gen/sources_1/ip/neuron_0/sim/neuron_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module neuron_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_faddfsub_32ns_32ns_32_7_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/MAC_fcmp_32ns_32ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/MAC_flow_control_loop_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_flow_control_loop_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/MAC_fmul_32ns_32ns_32_4_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_fmul_32ns_32ns_32_4_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/verilog/MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/MAC_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_fcmp_32ns_32ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/ip/MAC_fmul_32ns_32ns_32_4_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_fmul_32ns_32ns_32_4_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.gen/sources_1/ip/MAC_0/sim/MAC_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd" into library xbip_utils_v3_0_10
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/axi_utils_v2_0_vh_rfs.vhd" into library axi_utils_v2_0_6
+INFO: [VRFC 10-3107] analyzing entity 'glb_srl_fifo'
+INFO: [VRFC 10-3107] analyzing entity 'glb_ifx_slave'
+INFO: [VRFC 10-3107] analyzing entity 'glb_ifx_master'
+INFO: [VRFC 10-3107] analyzing entity 'axi_slave_2to1'
+INFO: [VRFC 10-3107] analyzing entity 'axi_slave_3to1'
+INFO: [VRFC 10-3107] analyzing entity 'axi_slave_4to1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd" into library xbip_pipe_v3_0_6
+INFO: [VRFC 10-3107] analyzing entity 'xbip_pipe_v3_0_6_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_pipe_v3_0_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/xbip_dsp48_wrapper_v3_0_vh_rfs.vhd" into library xbip_dsp48_wrapper_v3_0_4
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48a_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48a1_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e1_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48e2_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp58e5_wrapper_v3_0'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_wrapper_v3_0_4'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/xbip_dsp48_addsub_v3_0_vh_rfs.vhd" into library xbip_dsp48_addsub_v3_0_6
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_rtl'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_synth'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_v3_0_6_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_addsub_v3_0_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/xbip_dsp48_multadd_v3_0_vh_rfs.vhd" into library xbip_dsp48_multadd_v3_0_6
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_multadd_rtl'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_multadd_synth'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_multadd_v3_0_6_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_dsp48_multadd_v3_0_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/xbip_bram18k_v3_0_vh_rfs.vhd" into library xbip_bram18k_v3_0_6
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_synth'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_rtl'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_v3_0_6_viv'
+INFO: [VRFC 10-3107] analyzing entity 'xbip_bram18k_v3_0_6'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/mult_gen_v12_0_vh_rfs.vhd" into library mult_gen_v12_0_18
+INFO: [VRFC 10-3107] analyzing entity 'op_resize'
+INFO: [VRFC 10-3107] analyzing entity 'delay_line'
+INFO: [VRFC 10-3107] analyzing entity 'cc_compare'
+INFO: [VRFC 10-3107] analyzing entity 'luts'
+INFO: [VRFC 10-3107] analyzing entity 'mult18'
+INFO: [VRFC 10-3107] analyzing entity 'dsp'
+INFO: [VRFC 10-3107] analyzing entity 'hybrid'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_dist_mem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_sp_block_mem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_dp_block_mem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_syncmem'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_scaled_adder'
+INFO: [VRFC 10-3107] analyzing entity 'ccm_operation'
+INFO: [VRFC 10-3107] analyzing entity 'ccm'
+INFO: [VRFC 10-3107] analyzing entity 'three_input_adder'
+INFO: [VRFC 10-3107] analyzing entity 'multmxn_lut6'
+INFO: [VRFC 10-3107] analyzing entity 'mult_gen_v12_0_18_viv'
+INFO: [VRFC 10-3107] analyzing entity 'mult_gen_v12_0_18'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.ip_user_files/ipstatic/hdl/floating_point_v7_1_rfs.vhd" into library floating_point_v7_1_15
+INFO: [VRFC 10-3107] analyzing entity 'fdgS'
+INFO: [VRFC 10-3107] analyzing entity 'fdgW'
+INFO: [VRFC 10-3107] analyzing entity 'lutV'
+INFO: [VRFC 10-3107] analyzing entity 'lutS'
+INFO: [VRFC 10-3107] analyzing entity 'lutN'
+INFO: [VRFC 10-3107] analyzing entity 'lutNMuxS'
+INFO: [VRFC 10-3107] analyzing entity 'srl16eS'
+INFO: [VRFC 10-3107] analyzing entity 'delayS'
+INFO: [VRFC 10-3107] analyzing entity 'andW'
+INFO: [VRFC 10-3107] analyzing entity 'orW'
+INFO: [VRFC 10-3107] analyzing entity 'srl16ew'
+INFO: [VRFC 10-3107] analyzing entity 'delayW'
+INFO: [VRFC 10-3107] analyzing entity 'compW'
+INFO: [VRFC 10-3107] analyzing entity 'addSubW'
+INFO: [VRFC 10-3107] analyzing entity 'equalW'
+INFO: [VRFC 10-3107] analyzing entity 'addW'
+INFO: [VRFC 10-3107] analyzing entity 'mult18'
+INFO: [VRFC 10-3107] analyzing entity 'cntrlgen'
+INFO: [VRFC 10-3107] analyzing entity 'cntrlgen2'
+INFO: [VRFC 10-3107] analyzing entity 'ppGenR8'
+INFO: [VRFC 10-3107] analyzing entity 'ppGenR8Msb2'
+INFO: [VRFC 10-3107] analyzing entity 'addSubShGW'
+INFO: [VRFC 10-3107] analyzing entity 'addSubShFW'
+INFO: [VRFC 10-3107] analyzing entity 'vmRoundW'
+INFO: [VRFC 10-3107] analyzing entity 'vmsMultCore'
+INFO: [VRFC 10-3107] analyzing entity 'wideEmbedMult4'
+INFO: [VRFC 10-3107] analyzing entity 'wideEmbedMult16'
+INFO: [VRFC 10-3107] analyzing entity 'wideEmbedMult'
+INFO: [VRFC 10-3107] analyzing entity 'dsp48MultALine'
+INFO: [VRFC 10-3107] analyzing entity 'dsp48Mult'
+INFO: [VRFC 10-3107] analyzing entity 'xMult'
+INFO: [VRFC 10-3107] analyzing entity 'delay'
+INFO: [VRFC 10-3107] analyzing entity 'delay_s'
+INFO: [VRFC 10-3107] analyzing entity 'mux_bus2'
+INFO: [VRFC 10-3107] analyzing entity 'twos_comp'
+INFO: [VRFC 10-3107] analyzing entity 'carry_chain'
+INFO: [VRFC 10-3107] analyzing entity 'mux4'
+INFO: [VRFC 10-3107] analyzing entity 'compare_gt'
+INFO: [VRFC 10-3107] analyzing entity 'compare_eq_im'
+INFO: [VRFC 10-3107] analyzing entity 'compare_ne_im'
+INFO: [VRFC 10-3107] analyzing entity 'compare_eq'
+INFO: [VRFC 10-3107] analyzing entity 'compare'
+INFO: [VRFC 10-3107] analyzing entity 'special_detect'
+INFO: [VRFC 10-3107] analyzing entity 'norm_zero_det'
+INFO: [VRFC 10-3107] analyzing entity 'zero_det_sel'
+INFO: [VRFC 10-3107] analyzing entity 'shift_msb_first'
+INFO: [VRFC 10-3107] analyzing entity 'flt_dec_op'
+INFO: [VRFC 10-3107] analyzing entity 'flt_dec_op_lat'
+INFO: [VRFC 10-3107] analyzing entity 'lead_zero_encode'
+INFO: [VRFC 10-3107] analyzing entity 'lead_zero_encode_shift'
+INFO: [VRFC 10-3107] analyzing entity 'dsp48e1_wrapper'
+INFO: [VRFC 10-3107] analyzing entity 'dsp48e2_wrapper'
+INFO: [VRFC 10-3107] analyzing entity 'addsub_logic'
+INFO: [VRFC 10-3107] analyzing entity 'addsub_dsp'
+INFO: [VRFC 10-3107] analyzing entity 'addsub'
+INFO: [VRFC 10-3107] analyzing entity 'flt_round_bit'
+INFO: [VRFC 10-3107] analyzing entity 'renorm_and_round_logic'
+INFO: [VRFC 10-3107] analyzing entity 'norm_and_round_dsp48e1_sgl'
+INFO: [VRFC 10-3107] analyzing entity 'norm_and_round_logic'
+INFO: [VRFC 10-3107] analyzing entity 'alignment'
+INFO: [VRFC 10-3107] analyzing entity 'normalize'
+INFO: [VRFC 10-3107] analyzing entity 'align_add_dsp48e1_sgl'
+INFO: [VRFC 10-3107] analyzing entity 'align_add'
+INFO: [VRFC 10-3107] analyzing entity 'multadd'
+INFO: [VRFC 10-3107] analyzing entity 'compare_ge'
+INFO: [VRFC 10-3107] analyzing entity 'flt_mant_lookup_hp'
+INFO: [VRFC 10-3107] analyzing entity 'fix_to_flt_conv_exp'
+INFO: [VRFC 10-3107] analyzing entity 'fix_to_flt_conv'
+INFO: [VRFC 10-3107] analyzing entity 'flt_to_fix_conv'
+INFO: [VRFC 10-3107] analyzing entity 'flt_to_flt_conv_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_to_flt_conv'
+INFO: [VRFC 10-3107] analyzing entity 'fp_cmp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_sqrt_mant_addsub'
+INFO: [VRFC 10-3107] analyzing entity 'flt_sqrt_mant'
+INFO: [VRFC 10-3107] analyzing entity 'flt_sqrt_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_sqrt'
+INFO: [VRFC 10-3107] analyzing entity 'flt_div_mant_addsub'
+INFO: [VRFC 10-3107] analyzing entity 'flt_div_mant'
+INFO: [VRFC 10-3107] analyzing entity 'flt_div_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_div'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_dsp48e1_lat_dbl'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_dsp48e1_sgl'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_dsp48e1_dbl'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_dsp48e2_dbl'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_qq'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult_xx'
+INFO: [VRFC 10-3107] analyzing entity 'fix_mult'
+INFO: [VRFC 10-3107] analyzing entity 'flt_round_dsp_opt_full'
+INFO: [VRFC 10-3107] analyzing entity 'flt_round_dsp_opt_part'
+INFO: [VRFC 10-3107] analyzing entity 'flt_mult_round'
+INFO: [VRFC 10-3107] analyzing entity 'flt_mult_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_mult_prim'
+INFO: [VRFC 10-3107] analyzing entity 'flt_mult'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_logic'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_lat_align_add'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_lat_norm'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_lat_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_lat'
+INFO: [VRFC 10-3107] analyzing entity 'align_add_dsp48e1_hp'
+INFO: [VRFC 10-3107] analyzing entity 'lead_zero_encode_shift_hp'
+INFO: [VRFC 10-3107] analyzing entity 'norm_and_round_dsp48e1_hp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_exp_hp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_exp_sp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_dsp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add_prim'
+INFO: [VRFC 10-3107] analyzing entity 'flt_add'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_approx'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_nr'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_reduction_calc'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_eval'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_postprocess'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_specialcase'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip_recomb'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recipsqrt_dp_m_calc'
+INFO: [VRFC 10-3107] analyzing entity 'flt_recip'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_addsub'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_addsub_taylor_fabric'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_addsub_taylor_combiner_fabric'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_single_one_detect'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_inproc'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_L_block_memory'
+INFO: [VRFC 10-3107] analyzing entity 'flt_pt_log_L_block'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_rr_mul_iter'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_rr_mul'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_rr'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_taylor'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_shift_msb_first'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_lead_zero_encode'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_normalize'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_norm'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_rnd'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_specialcase'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log_recomb'
+INFO: [VRFC 10-3107] analyzing entity 'flt_log'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_specialcase'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_recomb'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_ccm'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_e2A'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_dp_poly'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_e2zmzm1'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp_hp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_specialcase'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_round_bit'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_renorm_and_round_logic'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_special_detect'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_add_exp'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_alignment'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_addsub_dsp1'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_addsub_dsp2'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_addsub'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_align_add'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_norm_logic'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_add_logic'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_add'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma_mul'
+INFO: [VRFC 10-3107] analyzing entity 'flt_fma'
+INFO: [VRFC 10-3107] analyzing entity 'flt_ufma'
+INFO: [VRFC 10-3107] analyzing entity 'flt_ufmacc'
+INFO: [VRFC 10-3107] analyzing entity 'flt_accum_flt_to_fix'
+INFO: [VRFC 10-3107] analyzing entity 'flt_accum_bit_encode'
+INFO: [VRFC 10-3107] analyzing entity 'flt_accum'
+INFO: [VRFC 10-3107] analyzing entity 'flt_accum_prim'
+INFO: [VRFC 10-3107] analyzing entity 'floating_point_v7_1_15_viv'
+INFO: [VRFC 10-3107] analyzing entity 'floating_point_v7_1_15'
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:27 . Memory (MB): peak = 1157.723 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '27' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L floating_point_v7_1_15 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L floating_point_v7_1_15 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_15.floating_point_v7_1_15_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_15.floating_point_v7_1_15_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_15.floating_point_v7_1_15_exp_table...
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_15.floating_point_v7_1_15_pkg
+Compiling package floating_point_v7_1_15.flt_utils
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=7,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_15.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=24,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=16,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [delay_default]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=24,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_15.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xc7a35t...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=13)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=27)\]
+Compiling architecture synth of entity floating_point_v7_1_15.align_add_dsp48e1_sgl [\align_add_dsp48e1_sgl(c_xdevice...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=27,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=5,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_15.lead_zero_encode_shift [\lead_zero_encode_shift(ab_fw=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=3,length=0)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110010101001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010001010111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=2)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_15.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_15.norm_and_round_dsp48e1_sgl [\norm_and_round_dsp48e1_sgl(c_mu...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100110011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=9,length=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_15.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_15.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_15.compare_gt [\compare_gt(c_xdevicefamily="art...]
+Compiling architecture synth of entity floating_point_v7_1_15.compare [\compare(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=2,length=3,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(length=3,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_15.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=23)\]
+Compiling architecture synth of entity floating_point_v7_1_15.flt_dec_op [\flt_dec_op(c_xdevicefamily="art...]
+Compiling architecture rtl of entity floating_point_v7_1_15.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="ar...]
+Compiling architecture rtl of entity floating_point_v7_1_15.flt_add [\flt_add(c_xdevicefamily="artix7...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15_viv [\floating_point_v7_1_15_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15 [\floating_point_v7_1_15(c_xdevic...]
+Compiling module xil_defaultlib.MAC_faddfsub_32ns_32ns_32_7_full...
+Compiling module xil_defaultlib.MAC_faddfsub_32ns_32ns_32_7_full...
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_15.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_15.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_15.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.fix_mult [\fix_mult(c_xdevicefamily="artix...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_15.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_15.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=14,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_15.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="a...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_15.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_15.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_15.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_15.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.flt_mult [\flt_mult(c_xdevicefamily="artix...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15_viv [\floating_point_v7_1_15_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15 [\floating_point_v7_1_15(c_xdevic...]
+Compiling module xil_defaultlib.MAC_fmul_32ns_32ns_32_4_max_dsp_...
+Compiling module xil_defaultlib.MAC_fmul_32ns_32ns_32_4_max_dsp_...
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_15.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_15.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=2,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_15.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=11,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_15.compare_eq [\compare_eq(c_xdevicefamily="art...]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_15.compare_gt [\compare_gt(c_xdevicefamily="art...]
+Compiling architecture rtl of entity floating_point_v7_1_15.fp_cmp [\fp_cmp(c_xdevicefamily="artix7"...]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15_viv [\floating_point_v7_1_15_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15 [\floating_point_v7_1_15(c_xdevic...]
+Compiling module xil_defaultlib.MAC_fcmp_32ns_32ns_1_2_no_dsp_1_...
+Compiling module xil_defaultlib.MAC_fcmp_32ns_32ns_1_2_no_dsp_1
+Compiling module xil_defaultlib.MAC_flow_control_loop_pipe
+Compiling module xil_defaultlib.MAC
+Compiling module xil_defaultlib.MAC_0
+Compiling module xil_defaultlib.neuron_neuron_Pipeline_VITIS_LOO...
+Compiling module xil_defaultlib.neuron_fmul_32ns_32ns_32_4_max_d...
+Compiling module xil_defaultlib.neuron_fmul_32ns_32ns_32_4_max_d...
+Compiling module xil_defaultlib.neuron_fcmp_32ns_32ns_1_2_no_dsp...
+Compiling module xil_defaultlib.neuron_fcmp_32ns_32ns_1_2_no_dsp...
+Compiling module xil_defaultlib.neuron_flow_control_loop_pipe_se...
+Compiling module xil_defaultlib.neuron_neuron_Pipeline_VITIS_LOO...
+Compiling module xil_defaultlib.neuron_faddfsub_32ns_32ns_32_7_f...
+Compiling module xil_defaultlib.neuron_faddfsub_32ns_32ns_32_7_f...
+Compiling architecture rtl of entity floating_point_v7_1_15.flt_add [\flt_add(c_xdevicefamily="artix7...]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15_viv [\floating_point_v7_1_15_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15 [\floating_point_v7_1_15(c_xdevic...]
+Compiling module xil_defaultlib.neuron_fadd_32ns_32ns_32_7_full_...
+Compiling module xil_defaultlib.neuron_fadd_32ns_32ns_32_7_full_...
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=23,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_15.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=26,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=25,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture synth of entity floating_point_v7_1_15.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=26)\]
+Compiling architecture virtex of entity floating_point_v7_1_15.flt_div_mant [\flt_div_mant(c_xdevicefamily="a...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=10,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_15.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(length=13,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=8,length=12)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(length=12,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=3,length=12,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=4,length=12,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_15.flt_div_exp [\flt_div_exp(c_xdevicefamily="no...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_15.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture struct of entity floating_point_v7_1_15.carry_chain [\carry_chain(c_xdevicefamily="ar...]
+Compiling architecture rtl of entity floating_point_v7_1_15.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_15.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_15.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture virtex of entity floating_point_v7_1_15.flt_div [\flt_div(c_xdevicefamily="artix7...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15_viv [\floating_point_v7_1_15_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_15.floating_point_v7_1_15 [\floating_point_v7_1_15(c_xdevic...]
+Compiling module xil_defaultlib.neuron_fdiv_32ns_32ns_32_16_no_d...
+Compiling module xil_defaultlib.neuron_fdiv_32ns_32ns_32_16_no_d...
+Compiling module xil_defaultlib.neuron
+Compiling module xil_defaultlib.neuron_0
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:54 . Memory (MB): peak = 1157.723 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '55' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/chait/OneDrive/Desktop/submission/neuron_ipcheck/neuron_ipcheck.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 230 ns  Iteration: 8  Process: /testbench/dut/mac/inst/faddfsub_32ns_32ns_32_7_full_dsp_1_U1/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 310 ns  Iteration: 8  Process: /testbench/dut/mac/inst/faddfsub_32ns_32ns_32_7_full_dsp_1_U1/MAC_faddfsub_32ns_32ns_32_7_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1179.191 ; gain = 21.469
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:01:34 . Memory (MB): peak = 1179.191 ; gain = 26.172
